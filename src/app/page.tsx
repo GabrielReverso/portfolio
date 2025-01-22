@@ -6,7 +6,7 @@ import 'aos/dist/aos.css';
 import MainSection from './components/MainSection';
 import Header from './components/Header';
 
-export default function Page() {
+export default function Home() {
   useEffect(() => {
     AOS.init({
       duration: 800,
@@ -15,7 +15,7 @@ export default function Page() {
     })
   }, [])
   return (
-    <div className="flex w-screen font-[family-name:var(--font-geist-sans)]">
+    <div className="flex flex-col w-screen font-[family-name:var(--font-geist-sans)]">
       <Header />
       <MainSection />
     </div>

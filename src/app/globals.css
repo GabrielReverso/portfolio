@@ -27,12 +27,12 @@ body {
 }
 
 .wrapper {
-  @apply h-full max-w-[60%] mx-auto
+  @apply h-full max-w-[70%] mx-auto
 }
 
 .Typewriter__wrapper,
 .Typewriter__cursor {
-  @apply text-4xl
+  @apply text-5xl
 }
 
 .Typewriter__mobile {
