@@ -38,7 +38,7 @@ export default function MainSection() {
                             <FontelloIcon name={"icon-doc-inv"} classStyling='mr-1' /> Currículo
                         </button>
                     </section>
-                    <div className='flex flex-row mt-10'>
+                    <div className='flex flex-row mt-10 items-center'>
                         <p className='text-xl mr-4'>Veja mais!</p>
                         <ResponsiveIconScroll />
                     </div>

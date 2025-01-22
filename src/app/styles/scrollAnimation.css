@@ -29,7 +29,8 @@
     position: absolute;
     height: 15%;
     width: 80%;
-    border-radius: 9999px;
+    border-top-left-radius: 9999px;
+    border-bottom-left-radius: 9999px;
     background-color: white;
     left: 55%;
     animation: touch-scroll-animation 2s ease-in-out infinite;
