@@ -39,7 +39,7 @@ export default function MainSection() {
                         </button>
                     </section>
                     <div className='flex flex-row mt-10'>
-                        <p>Veja mais - </p>
+                        <p className='text-xl mr-4'>Veja mais!</p>
                         <ResponsiveIconScroll />
                     </div>
                 </aside>

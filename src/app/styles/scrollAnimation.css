@@ -1,0 +1,57 @@
+#mouse-scroll {
+    position: relative;
+    height: 30%;
+    width: 20%;
+    border-radius: 9999px;
+    background-color: white;
+    animation: mouse-scroll-animation 1.5s ease-in-out infinite;
+}
+
+@keyframes mouse-scroll-animation {
+    0% {
+        margin-top: 4px;
+        opacity: 0.2;
+    }
+
+    50% {
+        margin-top: 8px;
+        opacity: 1;
+    }
+
+    100% {
+        margin-top: 8px;
+        opacity: 0;
+    }
+
+}
+
+#touch-scroll {
+    position: absolute;
+    height: 15%;
+    width: 80%;
+    border-radius: 9999px;
+    background-color: white;
+    left: 55%;
+    animation: touch-scroll-animation 2s ease-in-out infinite;
+}
+
+@keyframes touch-scroll-animation {
+    0% {
+        margin-top: 18px;
+        opacity: 0;
+        transform: rotate(-20deg);
+    }
+
+    50% {
+        margin-top: 10px;
+        opacity: 1;
+        transform: rotate(20deg);
+    }
+
+    100% {
+        margin-top: 10px;
+        opacity: 0;
+        transform: rotate(20deg);
+    }
+
+}
