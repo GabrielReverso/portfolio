@@ -18,6 +18,7 @@ export default function Home() {
     <div className="flex flex-col w-screen font-[family-name:var(--font-geist-sans)]">
       <Header />
       <MainSection />
+      <div className='h-20 w-screen'></div>
     </div>
   );
 }

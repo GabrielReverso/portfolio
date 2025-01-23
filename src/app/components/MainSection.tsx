@@ -1,12 +1,19 @@
 import Typewriter from 'typewriter-effect';
 import FontelloIcon from './shared/FontelloIcon';
 import ResponsiveIconScroll from './shared/ResponsiveIconScroll';
+import Image from 'next/image';
+import useMousePosition from '../hooks/UseMousePosition';
+
 
 export default function MainSection() {
+    const { x, y } = useMousePosition();
+    const mouseDistanceX = x / window.innerWidth;
+    const mouseDistanceY = y / window.innerHeight;
+
     return (
-        <main className="w-full h-[calc(100vh-5rem)] gradient-background mt-20">
-            <div className="flex flex-row wrapper pt-40">
-                <aside>
+        <main className="w-full h-[calc(100vh-5rem)] gradient-background mt-20 overflow-y-hidden">
+            <div className="flex flex-row wrapper">
+                <aside className='min-w-[620px] pt-40'>
                     <p className="text-3xl">Olá, eu sou o </p>
                     <p className="font-bold text-7xl mt-4 text-cyan-400">Gabriel</p>
                     <div className='flex flex-row gap-3 mt-6 font-[family-name:var(--font-geist-mono)]'>
@@ -43,6 +50,20 @@ export default function MainSection() {
                         <ResponsiveIconScroll />
                     </div>
                 </aside>
+                <picture className='ml-10'>
+                    <Image
+                        /* className='w-40 h-56' */
+                        className='w-[40rem] h-[56rem]'
+                        aria-hidden
+                        src={require("../assets/picture.webp")}
+                        alt="File icon"
+                        loading='lazy'
+                        unoptimized
+                        style={{
+                            transform: `translate(${mouseDistanceX * -30}px, ${mouseDistanceY * -30}px)`
+                        }}
+                    />
+                </picture>
             </div>
         </main>
     );
