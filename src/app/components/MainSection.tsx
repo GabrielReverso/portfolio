@@ -6,12 +6,12 @@ import useMousePosition from '../hooks/UseMousePosition';
 
 
 export default function MainSection() {
-    const { x, y } = useMousePosition();
+    const { x, y } = useMousePosition("banner");
     const mouseDistanceX = x / window.innerWidth;
     const mouseDistanceY = y / window.innerHeight;
 
     return (
-        <main className="w-full h-[calc(100vh-5rem)] gradient-background mt-20 overflow-y-hidden">
+        <main id='banner' className="w-full h-[calc(100vh-5rem)] gradient-background mt-20 overflow-y-hidden">
             <div className="flex flex-row wrapper">
                 <aside className='min-w-[620px] pt-40'>
                     <p className="text-3xl">Olá, eu sou o </p>
