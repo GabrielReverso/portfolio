@@ -33,7 +33,7 @@ body {
 
 .Typewriter__wrapper,
 .Typewriter__cursor {
-  @apply text-5xl
+  @apply text-3xl md:text-5xl
 }
 
 .Typewriter__mobile {
@@ -46,4 +46,14 @@ body {
 
 .Typewriter__web {
   @apply text-pink-300
+}
+
+@media screen and (max-width: 1430px) {
+  #banner {
+    height: fit-content;
+  }
+
+  #banner>div.wrapper {
+    flex-direction: column;
+  }
 }

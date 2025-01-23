@@ -3,21 +3,33 @@ import FontelloIcon from './shared/FontelloIcon';
 import ResponsiveIconScroll from './shared/ResponsiveIconScroll';
 import Image from 'next/image';
 import useMousePosition from '../hooks/UseMousePosition';
+import { useWindow } from '../hooks/UseWindow';
+import BackgroundShape from './shared/BackgroundShape';
 
 
 export default function MainSection() {
     const { x, y } = useMousePosition("banner");
-    const mouseDistanceX = x / window.innerWidth;
-    const mouseDistanceY = y / window.innerHeight;
+    const windowRef = useWindow();
+    const mouseDistanceX = x / (windowRef?.innerWidth || 1);
+    const mouseDistanceY = y / (windowRef?.innerHeight || 1);
+
+    function openNewTab(url: string) {
+        const link = document.createElement('a');
+        link.href = url;
+        link.target = '_blank';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
 
     return (
-        <main id='banner' className="w-full h-[calc(100vh-5rem)] gradient-background mt-20 overflow-y-hidden">
+        <main id='banner' className="w-full h-[calc(100vh-5rem)] gradient-background mt-20 overflow-y-hidden" style={{ overflowX: "hidden" }}>
             <div className="flex flex-row wrapper">
-                <aside className='min-w-[620px] pt-40'>
-                    <p className="text-3xl">Olá, eu sou o </p>
-                    <p className="font-bold text-7xl mt-4 text-cyan-400">Gabriel</p>
-                    <div className='flex flex-row gap-3 mt-6 font-[family-name:var(--font-geist-mono)]'>
-                        <p className="text-5xl">Desenvolvedor</p>
+                <aside className='min-w-[620px] pt-12 md:pt-40'>
+                    <p className="text-2xl md:text-3xl">Olá, eu sou o </p>
+                    <p className="font-bold text-6xl md:text-7xl mt-4 text-cyan-400">Gabriel</p>
+                    <div className='flex flex-col md:flex-row gap-3 mt-6 font-[family-name:var(--font-geist-mono)]'>
+                        <p className="text-3xl md:text-5xl">Desenvolvedor</p>
                         <Typewriter
                             options={{ loop: true }}
                             onInit={(typewriter) => {
@@ -34,11 +46,11 @@ export default function MainSection() {
                             }}
                         />
                     </div>
-                    <section className='flex flex-row mt-10'>
-                        <button className="h-16 w-44 rounded-xl text-xl font-bold bg-[#0e76a8] shadow-md shadow-[#0005] hover:bg-[#0f6086] transition-all">
+                    <section className='flex flex-col md:flex-row mt-10'>
+                        <button onClick={() => openNewTab("https://www.linkedin.com/in/gabriel-reverso-pereira")} className="h-16 w-44 rounded-xl text-xl font-bold bg-[#0e76a8] shadow-md shadow-[#0005] hover:bg-[#0f6086] transition-all">
                             <FontelloIcon name={"icon-linkedin"} classStyling='mr-1 text-2xl' /> Linkedin
                         </button>
-                        <button className="h-16 w-44 rounded-xl text-xl font-bold bg-[#24292e] mx-4 shadow-md shadow-[#0005] hover:bg-[#191d22] transition-all">
+                        <button onClick={() => openNewTab("https://github.com/GabrielReverso")} className="h-16 w-44 rounded-xl text-xl font-bold bg-[#24292e] mx-0 my-4 md:mx-4 md:my-0 shadow-md shadow-[#0005] hover:bg-[#191d22] transition-all">
                             <FontelloIcon name={"icon-github-circled"} classStyling='mr-1 text-2xl' /> Github
                         </button>
                         <button className="h-16 w-44 rounded-xl text-xl font-bold bg-[#a33939] shadow-md shadow-[#0005] hover:bg-[#802626] transition-all">
@@ -50,19 +62,120 @@ export default function MainSection() {
                         <ResponsiveIconScroll />
                     </div>
                 </aside>
-                <picture className='ml-10'>
+                <picture className='ml-0 mt-5 md:ml-1 lg:mt-0 relative text-[0.6rem] md:text-xs lg:text-base'>
+                    <BackgroundShape
+                        height='xl'
+                        width='lg'
+                        rounded
+                        color='#053eb0'
+                        left={"65%"}
+                        top={"40%"}
+                        zIndex={1}
+                        translate={
+                            {
+                                x: mouseDistanceX * -50,
+                                y: mouseDistanceY * -50
+                            }
+                        }
+                    />
+                    <BackgroundShape
+                        height='md'
+                        width='md'
+                        rounded
+                        color='#016bd6'
+                        left={"10%"}
+                        top={"70%"}
+                        zIndex={1}
+                        translate={
+                            {
+                                x: mouseDistanceX * -30,
+                                y: mouseDistanceY * -30
+                            }
+                        }
+                    />
+                    <BackgroundShape
+                        height='md'
+                        width='sm'
+                        rounded
+                        color='#9a01d6'
+                        left={"70%"}
+                        top={"10%"}
+                        zIndex={1}
+                        translate={
+                            {
+                                x: mouseDistanceX * -25,
+                                y: mouseDistanceY * -25
+                            }
+                        }
+                    />
+                    <BackgroundShape
+                        height='sm'
+                        width='sm'
+                        rounded
+                        color='#5f0b81'
+                        left={"-10%"}
+                        top={"8%"}
+                        zIndex={1}
+                        translate={
+                            {
+                                x: mouseDistanceX * -40,
+                                y: mouseDistanceY * -40
+                            }
+                        }
+                    />
+                    <BackgroundShape
+                        height='xl'
+                        width='xl'
+                        rounded
+                        color='#6037ad'
+                        left={"10%"}
+                        top={"2%"}
+                        zIndex={1}
+                        translate={
+                            {
+                                x: mouseDistanceX * -25,
+                                y: mouseDistanceY * -25
+                            }
+                        }
+                    />
+                    <BackgroundShape
+                        height='xl'
+                        width='xl'
+                        rounded
+                        color='white'
+                        left={"18%"}
+                        top={"10%"}
+                        zIndex={1}
+                        solid={false}
+                        translate={
+                            {
+                                x: mouseDistanceX * -20,
+                                y: mouseDistanceY * -20
+                            }
+                        }
+                    />
                     <Image
                         /* className='w-40 h-56' */
-                        className='w-[40rem] h-[56rem]'
+                        className='min-w-[400px] min-h-[400px] md:min-w-[928px] md:min-h-[928px] relative z-10'
                         aria-hidden
-                        src={require("../assets/picture.webp")}
+                        src={require("../assets/gabriel.webp")}
                         alt="File icon"
-                        loading='lazy'
+                        /* loading='lazy' */
                         unoptimized
+                        priority
+                        style={{
+                            transform: `translate(${mouseDistanceX * -10}px, ${mouseDistanceY * -10}px)`
+                        }}
+                    />
+                    {/*                     <img
+                        className='aspect-square h-[40rem]'
+                        src={require("../assets/gabriel.webp")}
+                        alt=""
+                        
                         style={{
                             transform: `translate(${mouseDistanceX * -30}px, ${mouseDistanceY * -30}px)`
                         }}
-                    />
+                    /> */}
                 </picture>
             </div>
         </main>
