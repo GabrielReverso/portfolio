@@ -35,6 +35,12 @@
       "css": "linkedin",
       "code": 61665,
       "src": "fontawesome"
+    },
+    {
+      "uid": "517522647a556192fbc78aa391b7b0c2",
+      "css": "cancel-circled-outline",
+      "code": 59393,
+      "src": "typicons"
     }
   ]
 }

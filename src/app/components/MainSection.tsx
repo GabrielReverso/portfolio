@@ -5,13 +5,20 @@ import Image from 'next/image';
 import useMousePosition from '../hooks/UseMousePosition';
 import { useWindow } from '../hooks/UseWindow';
 import BackgroundShape from './shared/BackgroundShape';
+import { isMobile } from "react-device-detect";
 
 
 export default function MainSection() {
-    const { x, y } = useMousePosition("banner");
-    const windowRef = useWindow();
-    const mouseDistanceX = x / (windowRef?.innerWidth || 1);
-    const mouseDistanceY = y / (windowRef?.innerHeight || 1);
+
+    let mouseDistanceX = 0
+    let mouseDistanceY = 0
+
+    if (!isMobile) {
+        const { x, y } = useMousePosition("banner");
+        const windowRef = useWindow();
+        mouseDistanceX = x / (windowRef?.innerWidth || 1);
+        mouseDistanceY = y / (windowRef?.innerHeight || 1);
+    }
 
     function openNewTab(url: string) {
         const link = document.createElement('a');
@@ -25,11 +32,11 @@ export default function MainSection() {
     return (
         <main id='banner' className="w-full h-[calc(100vh-5rem)] gradient-background mt-20 overflow-y-hidden" style={{ overflowX: "hidden" }}>
             <div className="flex flex-row wrapper">
-                <aside className='min-w-[620px] pt-12 md:pt-40'>
+                <aside id="main-section" className='pt-12 md:pt-40'>
                     <p className="text-2xl md:text-3xl">Olá, eu sou o </p>
                     <p className="font-bold text-6xl md:text-7xl mt-4 text-cyan-400">Gabriel</p>
-                    <div className='flex flex-col md:flex-row gap-3 mt-6 font-[family-name:var(--font-geist-mono)]'>
-                        <p className="text-3xl md:text-5xl">Desenvolvedor</p>
+                    <div className='flex flex-row gap-3 mt-6 items-center font-[family-name:var(--font-geist-mono)]'>
+                        <p className="text-[1.7rem] md:text-5xl">Desenvolvedor</p>
                         <Typewriter
                             options={{ loop: true }}
                             onInit={(typewriter) => {
@@ -46,14 +53,14 @@ export default function MainSection() {
                             }}
                         />
                     </div>
-                    <section className='flex flex-col md:flex-row mt-10'>
-                        <button onClick={() => openNewTab("https://www.linkedin.com/in/gabriel-reverso-pereira")} className="h-16 w-44 rounded-xl text-xl font-bold bg-[#0e76a8] shadow-md shadow-[#0005] hover:bg-[#0f6086] transition-all">
+                    <section className='flex flex-col items-center md:flex-row mt-10'>
+                        <button onClick={() => openNewTab("https://www.linkedin.com/in/gabriel-reverso-pereira")} className="h-16 w-full md:w-44 rounded-xl text-xl font-bold bg-[#0e76a8] shadow-md shadow-[#0005] hover:bg-[#0f6086] transition-all">
                             <FontelloIcon name={"icon-linkedin"} classStyling='mr-1 text-2xl' /> Linkedin
                         </button>
-                        <button onClick={() => openNewTab("https://github.com/GabrielReverso")} className="h-16 w-44 rounded-xl text-xl font-bold bg-[#24292e] mx-0 my-4 md:mx-4 md:my-0 shadow-md shadow-[#0005] hover:bg-[#191d22] transition-all">
+                        <button onClick={() => openNewTab("https://github.com/GabrielReverso")} className="h-16 w-full md:w-44 rounded-xl text-xl font-bold bg-[#24292e] mx-0 my-5 md:mx-4 md:my-0 shadow-md shadow-[#0005] hover:bg-[#191d22] transition-all">
                             <FontelloIcon name={"icon-github-circled"} classStyling='mr-1 text-2xl' /> Github
                         </button>
-                        <button className="h-16 w-44 rounded-xl text-xl font-bold bg-[#a33939] shadow-md shadow-[#0005] hover:bg-[#802626] transition-all">
+                        <button className="h-16 w-full md:w-44 rounded-xl text-xl font-bold bg-[#a33939] shadow-md shadow-[#0005] hover:bg-[#802626] transition-all">
                             <FontelloIcon name={"icon-doc-inv"} classStyling='mr-1' /> Currículo
                         </button>
                     </section>
@@ -62,7 +69,7 @@ export default function MainSection() {
                         <ResponsiveIconScroll />
                     </div>
                 </aside>
-                <picture className='ml-0 mt-5 md:ml-1 lg:mt-0 relative text-[0.6rem] md:text-xs lg:text-base'>
+                <picture className='ml-0 mt-10 md:ml-1 lg:mt-0 relative text-[0.6rem] md:text-xs lg:text-base'>
                     <BackgroundShape
                         height='xl'
                         width='lg'
