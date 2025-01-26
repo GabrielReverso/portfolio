@@ -5,7 +5,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  /*   --gradient-shadow: linear-gradient(45deg,
+  --gradient-shadow: linear-gradient(45deg,
       #fb0094,
       #0000ff,
       #00ff00,
@@ -15,24 +15,16 @@
       #0000ff,
       #00ff00,
       #ffff00,
-      #ff0000); */
+      #ff0000);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
-    /*     --gradient-shadow: linear-gradient(45deg,
+    --gradient-shadow: linear-gradient(45deg,
         #fb0094,
-        #0000ff,
-        #00ff00,
-        #ffff00,
-        #ff0000,
-        #fb0094,
-        #0000ff,
-        #00ff00,
-        #ffff00,
-        #ff0000); */
+        #0000ff);
   }
 }
 
@@ -43,14 +35,21 @@ body {
   overflow-x: hidden;
 }
 
-/* 
-.animated-shadow:before,
-.animated-shadow:after {
+.animated-shadow {
+  position: relative;
+  margin: 20px;
+  width: 400px;
+  height: 250px;
+  background: black;
+}
+
+.animated-shadow::before,
+.animated-shadow::after {
   content: "";
   position: absolute;
   top: -2px;
   left: -2px;
-  background: var(--gradient-shadow-animated);
+  background: var(--gradient-shadow);
   background-size: 400%;
   width: calc(100% + 4px);
   height: calc(100% + 4px);
@@ -58,7 +57,7 @@ body {
   animation: shadow-animation 20s linear infinite;
 }
 
-.animated-shadow:after {
+.animated-shadow::after {
   filter: blur(20px);
 }
 
@@ -68,13 +67,13 @@ body {
   }
 
   50% {
-    background-position: 300% 0;
+    background-position: 400% 0;
   }
 
   100% {
     background-position: 0 0;
   }
-} */
+}
 
 .gradient-background {
   background: #0f0c29;
