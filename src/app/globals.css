@@ -5,12 +5,34 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  /*   --gradient-shadow: linear-gradient(45deg,
+      #fb0094,
+      #0000ff,
+      #00ff00,
+      #ffff00,
+      #ff0000,
+      #fb0094,
+      #0000ff,
+      #00ff00,
+      #ffff00,
+      #ff0000); */
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    /*     --gradient-shadow: linear-gradient(45deg,
+        #fb0094,
+        #0000ff,
+        #00ff00,
+        #ffff00,
+        #ff0000,
+        #fb0094,
+        #0000ff,
+        #00ff00,
+        #ffff00,
+        #ff0000); */
   }
 }
 
@@ -21,10 +43,49 @@ body {
   overflow-x: hidden;
 }
 
+/* 
+.animated-shadow:before,
+.animated-shadow:after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background: var(--gradient-shadow-animated);
+  background-size: 400%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: -1;
+  animation: shadow-animation 20s linear infinite;
+}
+
+.animated-shadow:after {
+  filter: blur(20px);
+}
+
+@keyframes shadow-animation {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 300% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+} */
+
 .gradient-background {
   background: #0f0c29;
   background: -webkit-linear-gradient(to top, #24243e, #302b63, #0f0c29);
   background: linear-gradient(to top, #24243e, #302b63, #0f0c29);
+}
+
+.svg-background {
+  /* Background by: https://www.svgbackgrounds.com/set/free-svg-backgrounds-and-patterns/ */
+  background-image: url("./endless-constellation.svg");
+  box-shadow: inset -8px 0px 50px 25px #020617;
 }
 
 .wrapper {
@@ -97,6 +158,57 @@ body {
 
 #nav-side {
   box-shadow: -5px 0 10px 0 rgba(0, 0, 0, 0.7);
+}
+
+#about-me-div {
+  width: 33%;
+}
+
+#about-me-div span:not(.not-link):hover {
+  cursor: pointer;
+}
+
+#about-me-section>div:nth-child(odd) {
+  display: block;
+}
+
+@media screen and (max-width: 1300px) {
+  #about-me-section>div:nth-child(3) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  #about-me-section>div:nth-child(3) {
+    display: none;
+  }
+
+  #about-me-div {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  #about-me-section>div:nth-child(1) {
+    display: none;
+  }
+
+  #about-me-section {
+    flex-direction: column;
+  }
+
+  #about-me-div {
+    width: 85%;
+  }
+}
+
+.logo-container>div:not(:last-child) {
+  margin-right: 2.5rem;
+}
+
+.logo-container>div {
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.111));
+  margin-block: 1rem;
 }
 
 /* @media screen and (max-width: 768px) {

@@ -6,6 +6,7 @@ import useMousePosition from '../hooks/UseMousePosition';
 import { useWindow } from '../hooks/UseWindow';
 import BackgroundShape from './shared/BackgroundShape';
 import { isMobile } from "react-device-detect";
+import openNewTab from '../functions/NewTab';
 
 
 export default function MainSection() {
@@ -20,19 +21,10 @@ export default function MainSection() {
         mouseDistanceY = y / (windowRef?.innerHeight || 1);
     }
 
-    function openNewTab(url: string) {
-        const link = document.createElement('a');
-        link.href = url;
-        link.target = '_blank';
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-    }
-
     return (
         <main id='banner' className="w-full h-[calc(100vh-5rem)] gradient-background mt-20 overflow-y-hidden" style={{ overflowX: "hidden" }}>
             <div className="flex flex-row wrapper">
-                <aside id="main-section" className='pt-12 md:pt-40'>
+                <aside id="main-section" className='pt-10 md:pt-40'>
                     <p className="text-2xl md:text-3xl">Olá, eu sou o </p>
                     <p className="font-bold text-6xl md:text-7xl mt-4 text-cyan-400">Gabriel</p>
                     <div className='flex flex-row gap-3 mt-6 items-center font-[family-name:var(--font-geist-mono)]'>
@@ -166,7 +158,7 @@ export default function MainSection() {
                         className='min-w-[400px] min-h-[400px] md:min-w-[928px] md:min-h-[928px] relative z-10'
                         aria-hidden
                         src={require("../assets/gabriel.webp")}
-                        alt="File icon"
+                        alt="Imagem de Gabriel"
                         /* loading='lazy' */
                         unoptimized
                         priority
