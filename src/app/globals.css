@@ -16,15 +16,16 @@
       #00ff00,
       #ffff00,
       #ff0000);
+
 }
+
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
     --gradient-shadow: linear-gradient(45deg,
-        #fb0094,
-        #0000ff);
+        #99F6FF, #3D34AD, #6634ad, #9b34ad);
   }
 }
 
@@ -35,18 +36,11 @@ body {
   overflow-x: hidden;
 }
 
-.animated-shadow {
-  position: relative;
-  margin: 20px;
-  width: 400px;
-  height: 250px;
-  background: black;
-}
-
 .animated-shadow::before,
 .animated-shadow::after {
   content: "";
   position: absolute;
+  border-radius: 1rem;
   top: -2px;
   left: -2px;
   background: var(--gradient-shadow);
@@ -54,11 +48,11 @@ body {
   width: calc(100% + 4px);
   height: calc(100% + 4px);
   z-index: -1;
-  animation: shadow-animation 20s linear infinite;
+  animation: shadow-animation 5s linear infinite;
 }
 
 .animated-shadow::after {
-  filter: blur(20px);
+  filter: blur(25px);
 }
 
 @keyframes shadow-animation {
@@ -67,7 +61,7 @@ body {
   }
 
   50% {
-    background-position: 400% 0;
+    background-position: 100% 0;
   }
 
   100% {
