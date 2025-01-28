@@ -41,6 +41,24 @@
       "css": "cancel-circled-outline",
       "code": 59393,
       "src": "typicons"
+    },
+    {
+      "uid": "9a76bc135eac17d2c8b8ad4a5774fc87",
+      "css": "download",
+      "code": 59394,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "20fc52f9a88bb7bda023ef209acac095",
+      "css": "graduation-cap",
+      "code": 61853,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "053b757d97042e1c94276200c7b64b91",
+      "css": "briefcase",
+      "code": 59395,
+      "src": "fontawesome"
     }
   ]
 }

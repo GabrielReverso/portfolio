@@ -1,7 +1,10 @@
 
 .icon-phone:before { content: '\e800'; } /* '' */
 .icon-cancel-circled-outline:before { content: '\e801'; } /* '' */
+.icon-download:before { content: '\e802'; } /* '' */
+.icon-briefcase:before { content: '\e803'; } /* '' */
 .icon-github-circled:before { content: '\f09b'; } /* '' */
 .icon-mail-alt:before { content: '\f0e0'; } /* '' */
 .icon-linkedin:before { content: '\f0e1'; } /* '' */
 .icon-doc-inv:before { content: '\f15b'; } /* '' */
+.icon-graduation-cap:before { content: '\f19d'; } /* '' */

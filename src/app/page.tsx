@@ -8,6 +8,9 @@ import Header from './components/Header';
 import AboutMe from './components/AboutMe';
 import Technologies from './components/Technologies';
 import Projects from './components/Projects';
+import Curriculum from './components/Curriculum';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 export default function Home() {
   useEffect(() => {
@@ -24,9 +27,10 @@ export default function Home() {
       <MainSection />
       <AboutMe />
       <Technologies />
-      <div className='bg-slate-950 svg-background'>
-        <Projects />
-      </div>
+      <Projects />
+      <Curriculum />
+      <Contact />
+      <Footer />
     </div>
   );
 }
