@@ -1,5 +1,4 @@
 import Experience from "./shared/Experience";
-import FontelloIcon from "./shared/FontelloIcon";
 
 export default function Curriculum() {
     return (

@@ -28,7 +28,7 @@ export default function ExpandableCard({ title, description, aosDelay }: Props) 
             <div className="bg-black w-full h-full rounded-2xl">
                 <div className={`image-${title.toLowerCase().trim().replace(/[^a-z0-9]/g, '')} w-full h-full rounded-2xl`}>
                     <div className="card-background-gradient flex flex-col justify-end h-full w-full rounded-2xl transition-all ease-in-out duration-200 py-5 px-7 hover:backdrop-blur-sm">
-                        <p className="text-3xl font-bold  font-[family-name:var(--font-geist-mono)]">{title.charAt(0).toUpperCase() + title.slice(1)}</p>
+                        <p className="text-3xl font-bold font-[family-name:var(--font-geist-mono)]">{title.charAt(0).toUpperCase() + title.slice(1)}</p>
                         <p className={`text-base font-[family-name:var(--font-geist-mono)] ${isHovered ? "flex" : "hidden"} mt-1`}>{description}</p>
                         <button className={`w-fit text-base font-[family-name:var(--font-geist-mono)] ${isHovered ? "flex" : "hidden"} my-3 p-1.5 border rounded-lg border-white`}>
                             Veja mais!

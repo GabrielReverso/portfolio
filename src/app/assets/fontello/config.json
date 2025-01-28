@@ -59,6 +59,12 @@
       "css": "briefcase",
       "code": 59395,
       "src": "fontawesome"
+    },
+    {
+      "uid": "fe6697b391355dec12f3d86d6d490397",
+      "css": "up-open",
+      "code": 59396,
+      "src": "fontawesome"
     }
   ]
 }

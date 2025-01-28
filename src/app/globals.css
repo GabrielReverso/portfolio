@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 5rem;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -26,7 +31,13 @@ body {
   overflow-x: hidden;
 }
 
-.animated-shadow:hover {
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.animated-shadow:not(button):hover {
   /* height: 26.4rem;
   width: 19.8rem; */
   scale: 1.1;
@@ -39,34 +50,38 @@ body {
   border-radius: 1rem;
   top: -2px;
   left: -2px;
-  background: var(--gradient-shadow);
-  background-size: 400%;
+  background-image: conic-gradient(from var(--angle), #99F6FF, #3D34AD, #6634ad, #9b34ad, #99F6FF);
   width: calc(100% + 4px);
   height: calc(100% + 4px);
   z-index: -1;
   animation: shadow-animation 5s linear infinite;
 }
 
+.animated-shadow:is(button):before,
+.animated-shadow:is(button):after {
+  animation: shadow-animation 10s linear infinite;
+}
+
 .animated-shadow::after {
-  filter: blur(20px);
+  filter: blur(13px);
   transition: all 0.2s ease-in-out;
 }
 
-.animated-shadow:hover:after {
-  filter: blur(30px);
+.animated-shadow:is(button):after {
+  filter: blur(5px);
+}
+
+.animated-shadow:not(button):hover:after {
+  filter: blur(20px);
 }
 
 @keyframes shadow-animation {
-  0% {
-    background-position: 0 0;
+  from {
+    --angle: 0deg;
   }
 
-  50% {
-    background-position: 100% 0;
-  }
-
-  100% {
-    background-position: 0 0;
+  to {
+    --angle: 360deg;
   }
 }
 
@@ -108,11 +123,11 @@ body {
 }
 
 @media screen and (max-width: 1430px) {
-  #banner {
+  #home {
     height: fit-content;
   }
 
-  #banner>div.wrapper {
+  #home>div.wrapper {
     flex-direction: column;
   }
 

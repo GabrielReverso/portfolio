@@ -3,7 +3,7 @@ interface StyleProps {
 }
 
 interface Props {
-    name: "icon-mail-alt" | "icon-phone" | "icon-github-circled" | "icon-doc-inv" | "icon-linkedin" | "icon-cancel-circled-outline" | "icon-briefcase" | "icon-graduation-cap" | "icon-download"
+    name: "icon-mail-alt" | "icon-phone" | "icon-github-circled" | "icon-doc-inv" | "icon-linkedin" | "icon-cancel-circled-outline" | "icon-briefcase" | "icon-graduation-cap" | "icon-download" | "icon-up-open"
     classStyling?: string | undefined
     style?: StyleProps | undefined
 }

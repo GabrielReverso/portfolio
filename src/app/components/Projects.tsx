@@ -9,7 +9,7 @@ export default function Projects() {
                 <div className="wrapper flex flex-col items-center pt-10">
                     <h1 className="text-6xl text-cyan-500 font-bold mb-10">Projetos</h1>
                     <p className="text-center text-3xl">Veja alguns dos projetos mais importantes que participei</p>
-                    <button onClick={() => openNewTab("https://github.com/GabrielReverso")} className="h-16 w-full md:w-80 rounded-xl text-xl font-bold bg-[#24292e] mt-8 shadow-md shadow-[#0005] hover:bg-[#191d22] transition-all">
+                    <button onClick={() => openNewTab("https://github.com/GabrielReverso")} className="animated-shadow relative h-16 w-full md:w-80 rounded-xl text-xl font-bold bg-[#24292e] mt-8 shadow-md shadow-[#0005] hover:bg-[#191d22] transition-all">
                         <FontelloIcon name={"icon-github-circled"} classStyling='mr-1 text-2xl' /> Github - Conheça Todos!
                     </button>
                     <div className="w-full flex flex-wrap justify-center my-10">

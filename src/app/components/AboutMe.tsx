@@ -78,7 +78,7 @@ export default function AboutMe() {
                         <button onClick={() => openNewTab("https://www.linkedin.com/in/gabriel-reverso-pereira")} className="h-16 w-full rounded-xl text-xl font-bold bg-[#0e76a8] shadow-md shadow-[#0005] hover:bg-[#0f6086] transition-all">
                             <FontelloIcon name={"icon-linkedin"} classStyling='mr-1 text-2xl' /> Linkedin
                         </button>
-                        <button onClick={() => openEmail("reversogabrielpereira@gmail.com")} className="h-16 w-full rounded-xl text-xl font-bold bg-[#a33939] mx-4 shadow-md shadow-[#0005] hover:bg-[#802626] transition-all">
+                        <button onClick={() => openEmail("reversogabrielpereira@gmail.com")} className="h-16 w-full rounded-xl text-xl font-bold bg-[#a33939] ml-4 shadow-md shadow-[#0005] hover:bg-[#802626] transition-all">
                             <FontelloIcon name={"icon-mail-alt"} classStyling='mr-1 text-2xl' /> E-mail
                         </button>
                     </div>

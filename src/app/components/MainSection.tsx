@@ -15,14 +15,14 @@ export default function MainSection() {
     let mouseDistanceY = 0
 
     if (!isMobile) {
-        const { x, y } = useMousePosition("banner");
+        const { x, y } = useMousePosition("home");
         const windowRef = useWindow();
         mouseDistanceX = x / (windowRef?.innerWidth || 1);
         mouseDistanceY = y / (windowRef?.innerHeight || 1);
     }
 
     return (
-        <main id='banner' className="w-full h-[calc(100vh-5rem)] gradient-background mt-20 overflow-y-hidden" style={{ overflowX: "hidden" }}>
+        <main id='home' className="w-full h-[calc(100vh-5rem)] gradient-background mt-20 overflow-y-hidden" style={{ overflowX: "hidden" }}>
             <div className="flex flex-row wrapper">
                 <aside id="main-section" className='pt-10 md:pt-40'>
                     <p className="text-2xl md:text-3xl">Olá, eu sou o </p>
@@ -53,7 +53,7 @@ export default function MainSection() {
                             <FontelloIcon name={"icon-github-circled"} classStyling='mr-1 text-2xl' /> Github
                         </button>
                         <button className="h-16 w-full md:w-44 rounded-xl text-xl font-bold bg-[#a33939] shadow-md shadow-[#0005] hover:bg-[#802626] transition-all">
-                            <FontelloIcon name={"icon-doc-inv"} classStyling='mr-1' /> Currículo
+                            <FontelloIcon name={"icon-download"} classStyling='mr-1' /> Currículo
                         </button>
                     </section>
                     <div className='flex flex-row mt-10 items-center'>
