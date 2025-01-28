@@ -7,7 +7,7 @@ import FontelloIcon from './shared/FontelloIcon';
 export default function AboutMe() {
     return (
         <div className='bg-slate-950'>
-            <section data-aos="fade-up" id="about-me-section" className="relative flex flex-row items-center justify-center w-screen">
+            <section data-aos="fade-up" id="about-me" className="relative flex flex-row items-center justify-center w-screen">
                 <div className='text-xs lg:text-base w-1/3'>
                     <BackgroundShape
                         height='md'

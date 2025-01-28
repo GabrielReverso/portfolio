@@ -7,8 +7,8 @@ import GoToStartShape from "./shared/GoToStartShape";
 
 export default function Contact() {
     return (
-        <div className="bg-slate-950">
-            <section id="contact" data-aos="fade" className="relative w-screen py-32">
+        <div id="contact" className="bg-slate-950">
+            <section data-aos="fade" className="relative w-screen py-32">
                 <div className='text-xs lg:text-base w-1/3'>
                     <BackgroundShape
                         height='sm'

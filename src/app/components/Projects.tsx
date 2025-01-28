@@ -5,8 +5,8 @@ import FontelloIcon from "./shared/FontelloIcon";
 export default function Projects() {
     return (
         <div className='bg-slate-950 svg-background'>
-            <section id="projects" data-aos="fade" className="w-screen h-fit py-20">
-                <div className="wrapper flex flex-col items-center pt-10">
+            <section data-aos="fade" className="w-screen h-fit py-20">
+                <div id="projects" className="wrapper flex flex-col items-center pt-10">
                     <h1 className="text-6xl text-cyan-500 font-bold mb-10">Projetos</h1>
                     <p className="text-center text-3xl">Veja alguns dos projetos mais importantes que participei</p>
                     <button onClick={() => openNewTab("https://github.com/GabrielReverso")} className="animated-shadow relative h-16 w-full md:w-80 rounded-xl text-xl font-bold bg-[#24292e] mt-8 shadow-md shadow-[#0005] hover:bg-[#191d22] transition-all">

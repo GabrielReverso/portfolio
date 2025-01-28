@@ -2,8 +2,8 @@ import Experience from "./shared/Experience";
 
 export default function Curriculum() {
     return (
-        <div className="bg-slate-950">
-            <section id="curriculum" data-aos="fade-up" className="w-screen h-fit py-20">
+        <div id="curriculum" className="bg-slate-950">
+            <section data-aos="fade-up" className="w-screen h-fit py-20">
                 <div className="wrapper flex flex-col pt-10">
                     <p className="text-2xl md:text-3xl mb-2 font-bold">Saiba mais</p>
                     <h1 className="text-6xl mb-3 font-bold text-cyan-400">Meu Currículo</h1>

@@ -2,7 +2,7 @@ import LogoLink from "./shared/LogoLink"
 
 export default function Technologies() {
     return (
-        <div className='bg-slate-950'>
+        <div id="technologies" className='bg-slate-950'>
             <section data-aos="fade-up" className="w-screen py-20">
                 <div className="flex flex-col items-center justify-center wrapper w-screen h-fit px-5">
                     <h1 className="text-center text-6xl mb-10 font-bold text-violet-500">Tecnologias</h1>

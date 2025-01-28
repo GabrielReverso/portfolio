@@ -154,7 +154,7 @@ body {
   display: none;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1300px) {
   #nav-header {
     display: none;
   }
@@ -177,18 +177,18 @@ body {
   cursor: pointer;
 }
 
-#about-me-section>div:nth-child(odd) {
+#about-me>div:nth-child(odd) {
   display: block;
 }
 
 @media screen and (max-width: 1300px) {
-  #about-me-section>div:nth-child(3) {
+  #about-me>div:nth-child(3) {
     display: none;
   }
 }
 
 @media screen and (max-width: 1300px) {
-  #about-me-section>div:nth-child(3) {
+  #about-me>div:nth-child(3) {
     display: none;
   }
 
@@ -198,11 +198,11 @@ body {
 }
 
 @media screen and (max-width: 780px) {
-  #about-me-section>div:nth-child(1) {
+  #about-me>div:nth-child(1) {
     display: none;
   }
 
-  #about-me-section {
+  #about-me {
     flex-direction: column;
   }
 
