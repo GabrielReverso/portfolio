@@ -1,12 +1,41 @@
+import { useState } from "react";
+
 interface Props {
     title: string
     description: string
+    aosDelay: string
 }
 
-export default function ExpandableCard({ title = "codap", description = "codap" }: Props) {
-    return (
-        <div className="animated-shadow relative h-96 w-72 bg-black rounded-2xl">
+export default function ExpandableCard({ title, description, aosDelay }: Props) {
+    const [isHovered, setIsHovered] = useState(false);
 
+    /*  const handleMouseEnter = useCallback(() => {
+         setIsHovered(true); // 100ms = 0.1s
+     }, []);
+ 
+     const handleMouseLeave = useCallback(() => {
+         setIsHovered(false);
+     }, []);
+  */
+    return (
+        <div
+            data-aos="fade"
+            data-aos-delay={aosDelay}
+            className="animated-shadow relative h-96 w-72 bg-black rounded-2xl transition-all ease-in-out duration-200 m-10 select-none"
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+        >
+            <div className="bg-black w-full h-full rounded-2xl">
+                <div className={`image-${title.toLowerCase().trim().replace(/[^a-z0-9]/g, '')} w-full h-full rounded-2xl`}>
+                    <div className="card-background-gradient flex flex-col justify-end h-full w-full rounded-2xl transition-all ease-in-out duration-200 py-5 px-7 hover:backdrop-blur-sm">
+                        <p className="text-3xl font-bold  font-[family-name:var(--font-geist-mono)]">{title.charAt(0).toUpperCase() + title.slice(1)}</p>
+                        <p className={`text-base font-[family-name:var(--font-geist-mono)] ${isHovered ? "flex" : "hidden"} mt-1`}>{description}</p>
+                        <button className={`w-fit text-base font-[family-name:var(--font-geist-mono)] ${isHovered ? "flex" : "hidden"} my-3 p-1.5 border rounded-lg border-white`}>
+                            Veja mais!
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 }

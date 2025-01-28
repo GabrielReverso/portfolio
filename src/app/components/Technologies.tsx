@@ -5,8 +5,8 @@ export default function Technologies() {
         <div className='bg-slate-950'>
             <section data-aos="fade-up" className="w-screen py-20">
                 <div className="flex flex-col items-center justify-center wrapper w-screen h-fit px-5">
-                    <h1 className="text-6xl mb-10 font-bold text-violet-500">Tecnologias</h1>
-                    <p className="text-3xl mb-10">Principais tecnologias que costumo trabalhar</p>
+                    <h1 className="text-center text-6xl mb-10 font-bold text-violet-500">Tecnologias</h1>
+                    <p className="text-center text-3xl mb-10">Principais tecnologias que costumo trabalhar</p>
                     <div className="flex flex-wrap justify-center logo-container mb-20">
                         <LogoLink important link="https://react.dev" logoName="react" />
                         <LogoLink important link="https://reactnative.dev" logoName="react-native" />
@@ -17,7 +17,7 @@ export default function Technologies() {
                         <LogoLink important link="https://www.typescriptlang.org" logoName="typescript" />
                         <LogoLink important link="https://tailwindcss.com" logoName="tailwind" />
                     </div>
-                    <p className="text-3xl mb-10">Outras tecnologias e linguagens que conheço</p>
+                    <p className="text-center text-3xl mb-10">Outras tecnologias e linguagens que conheço</p>
                     <div className="flex flex-wrap justify-center logo-container mb-20">
                         <LogoLink link="https://vuejs.org" logoName="vue" />
                         <LogoLink link="https://vite.dev" logoName="vite" />
