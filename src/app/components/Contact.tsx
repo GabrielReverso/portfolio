@@ -8,8 +8,8 @@ import GoToStartShape from "./shared/GoToStartShape";
 export default function Contact() {
     return (
         <div id="contact" className="bg-slate-950">
-            <section data-aos="fade" className="relative w-screen py-32">
-                <div className='text-xs lg:text-base w-1/3'>
+            <section id="contact-section" data-aos="fade" className="relative w-screen pt-3 md:pt-32 pb-32">
+                <div className='text-base w-1/3'>
                     <BackgroundShape
                         height='sm'
                         width='md'
@@ -48,10 +48,10 @@ export default function Contact() {
                         zIndex={4}
                     />
                 </div>
-                <div className="wrapper flex flex-col items-center">
+                <div id="contact-div" className="wrapper flex flex-col items-center">
                     <div className="w-1/2">
-                        <h1 className="text-center text-6xl text-cyan-500 font-bold mb-10">Contato</h1>
-                        <p className="text-center text-3xl">O que está esperando? Entre já em contato e torne seu projeto em realidade!</p>
+                        <h1 className="text-center text-5xl md:text-6xl text-cyan-500 font-bold mb-10">Contato</h1>
+                        <p className="text-center text-2xl md:text-3xl">O que está esperando? Entre já em contato e torne seu projeto realidade!</p>
                         {/* <p className="text-center text-3xl">Imagine seu projeto digital virarando realidade. Próximo passo? Entre já em contato!</p> */}
                     </div>
                     <div className='flex flex-row mt-12 w-1/2'>
@@ -102,6 +102,8 @@ export default function Contact() {
                         zIndex={4}
                         solid={false}
                     />
+                </div>
+                <div className="to-start">
                     <GoToStartShape
                         height='md'
                         width='sm'

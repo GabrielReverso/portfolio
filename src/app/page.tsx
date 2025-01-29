@@ -22,7 +22,7 @@ export default function Home() {
     })
   }, [])
   return (
-    <div className="flex flex-col w-screen font-[family-name:var(--font-geist-sans)]">
+    <div className="flex flex-col w-screen font-[family-name:var(--font-geist-sans)]" style={{ overflowX: "hidden" }}>
       <Header />
       <MainSection />
       <AboutMe />

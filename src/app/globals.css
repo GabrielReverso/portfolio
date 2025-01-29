@@ -187,17 +187,34 @@ body {
   }
 }
 
+.to-start {
+  font-size: 1rem;
+}
+
 @media screen and (max-width: 1300px) {
-  #about-me>div:nth-child(3) {
+
+  #about-me>div:nth-child(3),
+  #contact-section>div:nth-child(3),
+  #contact-section>div:nth-child(1) {
     display: none;
   }
 
   #about-me-div {
     width: 50%;
   }
+
+  #contact-div>div {
+    width: 90%;
+  }
+
+  .to-start {
+    transform: translateY(5rem);
+    font-size: 0.7rem;
+  }
 }
 
 @media screen and (max-width: 780px) {
+
   #about-me>div:nth-child(1) {
     display: none;
   }
@@ -208,6 +225,11 @@ body {
 
   #about-me-div {
     width: 85%;
+  }
+
+  .to-start {
+    transform: translateY(6rem);
+    font-size: 0.4rem;
   }
 }
 

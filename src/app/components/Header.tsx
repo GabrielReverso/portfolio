@@ -32,7 +32,7 @@ export default function Header() {
                     <div className="m-4 self-end" onClick={() => setMenuVisible(false)}>
                         <FontelloIcon name={"icon-cancel-circled-outline"} classStyling="text-4xl text-[#f0f0f0]" />
                     </div>
-                    <div className="flex flex-col gap-6">
+                    <div className="flex flex-col gap-6 px-5 pt-5">
                         <p onClick={() => navigate("#home")} className="text-lg font-bold hover:cursor-pointer">Home</p>
                         <p onClick={() => navigate("#about-me")} className="text-lg font-bold hover:cursor-pointer">Sobre mim</p>
                         <p onClick={() => navigate("#technologies")} className="text-lg font-bold hover:cursor-pointer">Tecnologias</p>

@@ -5,12 +5,12 @@ export default function Curriculum() {
         <div id="curriculum" className="bg-slate-950">
             <section data-aos="fade-up" className="w-screen h-fit py-20">
                 <div className="wrapper flex flex-col pt-10">
-                    <p className="text-2xl md:text-3xl mb-2 font-bold">Saiba mais</p>
-                    <h1 className="text-6xl mb-3 font-bold text-cyan-400">Meu Currículo</h1>
-                    <p className="text-lg md:text-xl my-1.5">Veja minha experiência acadêmica e profissional</p>
-                    <div className="flex flex-row justify-between">
-                        <aside className="flex flex-col w-[45%]">
-                            <h1 className="text-4xl font-bold text-violet-500 mt-10">Acadêmico</h1>
+                    <p className="text-2xl lg:text-3xl mb-2 font-bold">Saiba mais</p>
+                    <h1 className="text-5xl lg:text-6xl mb-3 font-bold text-cyan-400">Meu Currículo</h1>
+                    <p className="text-lg lg:text-xl my-1.5">Veja minha experiência acadêmica e profissional</p>
+                    <div className="flex flex-col lg:flex-row gap-10 justify-between">
+                        <aside className="flex flex-col w-full">
+                            <h1 className="text-3xl lg:text-4xl font-bold text-violet-500 mt-10">Acadêmico</h1>
                             <Experience
                                 type={"academic"}
                                 title="Engenharia da computação"
@@ -28,8 +28,8 @@ export default function Curriculum() {
                                 local="ETEC José Martimiano da Silva"
                             />
                         </aside>
-                        <aside className="flex flex-col w-[45%]">
-                            <h1 className="text-4xl font-bold text-violet-500 mt-10">Profissional</h1>
+                        <aside className="flex flex-col w-full">
+                            <h1 className="text-3xl lg:text-4xl font-bold text-violet-500 mt-0 lg:mt-10">Profissional</h1>
                             <Experience
                                 type={"job"}
                                 title="Desenvolvimento do site JAL Corp"

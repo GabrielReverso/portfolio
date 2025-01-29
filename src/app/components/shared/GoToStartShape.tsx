@@ -47,8 +47,8 @@ export default function GoToStartShape(
 
     return (
         <div onClick={onClick} style={baseStyles} className="hover:cursor-pointer hover:scale-110 transition-all flex flex-col justify-center items-center shadow-lg shadow-[#0004]">
-            <FontelloIcon name={"icon-up-open"} classStyling="text-4xl" />
-            <p className="text-xl mt-3">Menu</p>
+            <FontelloIcon name={"icon-up-open"} classStyling="text-[3em] md:text-4xl" />
+            <p className="text-[1.75em] md:text-xl mt-0 md:mt-3">Menu</p>
         </div>
     );
 }
