@@ -7,6 +7,7 @@ import { useWindow } from '../hooks/UseWindow';
 import BackgroundShape from './shared/BackgroundShape';
 import { isMobile } from "react-device-detect";
 import openNewTab from '../functions/NewTab';
+import download from '../functions/Download';
 
 
 export default function MainSection() {
@@ -22,7 +23,7 @@ export default function MainSection() {
     }
 
     return (
-        <main id='home' className="w-full h-[calc(100vh-5rem)] gradient-background mt-20 overflow-y-hidden" style={{ overflowX: "hidden" }}>
+        <main id='home' className="w-full min-h-[800px] h-[calc(100vh-5rem)] gradient-background mt-20 overflow-y-hidden" style={{ overflowX: "hidden" }}>
             <div className="flex flex-row wrapper">
                 <aside id="main-section" className='pt-10 md:pt-40'>
                     <p className="text-2xl md:text-3xl">Olá, eu sou o </p>
@@ -52,7 +53,12 @@ export default function MainSection() {
                         <button onClick={() => openNewTab("https://github.com/GabrielReverso")} className="h-16 w-full md:w-44 rounded-xl text-xl font-bold bg-[#24292e] mx-0 my-5 md:mx-4 md:my-0 shadow-md shadow-[#0005] hover:bg-[#191d22] transition-all">
                             <FontelloIcon name={"icon-github-circled"} classStyling='mr-1 text-2xl' /> Github
                         </button>
-                        <button className="h-16 w-full md:w-44 rounded-xl text-xl font-bold bg-[#a33939] shadow-md shadow-[#0005] hover:bg-[#802626] transition-all">
+                        <button onClick={() => {
+                            console.log("Starting download...");
+                            download("Gabriel_Reverso_Pereira_-_Desenvolvimento_de_Software_e_Web.pdf")
+                        }}
+                            className="h-16 w-full md:w-44 rounded-xl text-xl font-bold bg-[#a33939] shadow-md shadow-[#0005] hover:bg-[#802626] transition-all"
+                        >
                             <FontelloIcon name={"icon-download"} classStyling='mr-1' /> Currículo
                         </button>
                     </section>
