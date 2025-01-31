@@ -291,6 +291,10 @@ body {
   @apply text-purple-400 font-bold cursor-pointer
 }
 
-.modal span:is(.project) {
+.modal span:is(.project):not(.no-link) {
   @apply text-rose-400 font-bold cursor-pointer
+}
+
+.modal span:is(.project) {
+  @apply text-rose-400 font-bold cursor-default
 }
