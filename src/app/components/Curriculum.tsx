@@ -1,4 +1,5 @@
 import Experience from "./shared/Experience";
+import FontelloIcon from "./shared/FontelloIcon";
 
 export default function Curriculum() {
     return (
@@ -10,7 +11,7 @@ export default function Curriculum() {
                     <p className="text-lg lg:text-xl my-1.5">Veja minha experiência acadêmica e profissional</p>
                     <div className="flex flex-col lg:flex-row gap-10 justify-between">
                         <aside className="flex flex-col w-full">
-                            <h1 className="text-3xl lg:text-4xl font-bold text-violet-500 mt-10">Acadêmico</h1>
+                            <h1 className="ml-4 md:ml-0 text-3xl lg:text-4xl font-bold mt-10 text-violet-400"><FontelloIcon classStyling="text-gray-50 mr-2" name={"icon-minus"} />Acadêmico</h1>
                             <Experience
                                 type={"academic"}
                                 title="Engenharia da computação"
@@ -29,7 +30,7 @@ export default function Curriculum() {
                             />
                         </aside>
                         <aside className="flex flex-col w-full">
-                            <h1 className="text-3xl lg:text-4xl font-bold text-violet-500 mt-0 lg:mt-10">Profissional</h1>
+                            <h1 className="ml-4 md:ml-0 text-3xl lg:text-4xl font-bold mt-0 lg:mt-10 text-violet-400"><FontelloIcon classStyling="text-gray-50 mr-2" name={"icon-minus"} />Profissional</h1>
                             <Experience
                                 type={"job"}
                                 title="Desenvolvimento do site JAL Corp"

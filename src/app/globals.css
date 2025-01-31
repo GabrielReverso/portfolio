@@ -248,7 +248,7 @@ body {
 }
 
 .image-codap {
-  background-image: url("./assets/Cody.png");
+  background-image: url("./assets/Cody.webp");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -264,7 +264,7 @@ body {
 }
 
 .image-enciclopet {
-  background-image: url("./assets/Enciclopet.png");
+  background-image: url("./assets/Enciclopet.webp");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -272,7 +272,7 @@ body {
 }
 
 .image-cardapium {
-  background-image: url("./assets/Cardapium.png");
+  background-image: url("./assets/Cardapium.webp");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -280,7 +280,7 @@ body {
 }
 
 .image-jira {
-  background-image: url("./assets/Jira.png");
+  background-image: url("./assets/Jira.webp");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;

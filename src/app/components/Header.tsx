@@ -35,7 +35,7 @@ export default function Header() {
                 <div onClick={() => setMenuVisible(false)} id="touchable-area" className="h-full w-full"></div>
                 <nav id="nav-side" className={`flex flex-col bg-[#251f57] w-[500px] h-full`}>
                     <div className="m-4 self-end" onClick={() => setMenuVisible(false)}>
-                        <FontelloIcon name={"icon-cancel-circled-outline"} classStyling="text-4xl text-[#f0f0f0]" />
+                        <FontelloIcon name={"icon-cancel"} classStyling="text-4xl text-[#f0f0f0]" />
                     </div>
                     <div className="flex flex-col gap-6 px-5 pt-5">
                         <p onClick={() => navigate("#home")} className="hover:scale-105 transition-all text-lg font-bold hover:cursor-pointer">Home</p>

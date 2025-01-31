@@ -1,5 +1,4 @@
 import { useState } from "react";
-import ProjectModal from "./ProjectModal";
 
 interface Props {
     title: string
