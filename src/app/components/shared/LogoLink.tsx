@@ -33,7 +33,7 @@ const logoMap = {
 
 export default function LogoLink({ link, logoName, important = false }: Props) {
     return (
-        <div onClick={() => openNewTab(link)}>
+        <div role="button" aria-details={`${logoName} logo`} onClick={() => openNewTab(link)}>
             <Image
                 className={`hover:cursor-pointer hover:scale-110 transition-all w-fit ${important ? "h-16 md:h-24" : "h-12 md:h-16"}`}
                 src={logoMap[logoName]}

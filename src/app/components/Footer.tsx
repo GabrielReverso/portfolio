@@ -11,7 +11,7 @@ export default function Footer() {
                 </div>
                 <div>
                     <p className="lg:text-right text-base mb-2">Portfólio desenvolvido usando Next.js e Tailwind</p>
-                    <p className="lg:text-right text-base">Confira o repositório no <span onClick={() => openNewTab("https://github.com/GabrielReverso/portfolio")} className="text-violet-300 hover:cursor-pointer">Github<FontelloIcon name={"icon-github-circled"} classStyling="text-lg ml-1" /></span></p>
+                    <p className="lg:text-right text-base">Confira o repositório no <span role="button" onClick={() => openNewTab("https://github.com/GabrielReverso/portfolio")} className="text-violet-300 hover:cursor-pointer">Github<FontelloIcon name={"icon-github-circled"} classStyling="text-lg ml-1" /></span></p>
                 </div>
             </div>
         </footer>

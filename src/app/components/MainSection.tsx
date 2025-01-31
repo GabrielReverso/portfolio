@@ -51,7 +51,7 @@ export default function MainSection() {
                             <FontelloIcon name={"icon-linkedin"} classStyling='mr-1 text-2xl' /> Linkedin
                         </button>
                         <button onClick={() => openNewTab("https://github.com/GabrielReverso")} className="h-16 w-full md:w-44 rounded-xl text-xl font-bold bg-[#24292e] mx-0 my-5 md:mx-4 md:my-0 shadow-md shadow-[#0005] hover:bg-[#191d22] transition-all">
-                            <FontelloIcon name={"icon-github-circled"} classStyling='mr-1 text-2xl' /> Github
+                            <FontelloIcon name={"icon-github-circled"} classStyling='mr-1 text-2xl' /> GitHub
                         </button>
                         <button onClick={() => {
                             console.log("Starting download...");
