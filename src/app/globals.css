@@ -37,7 +37,7 @@ body {
   inherits: false;
 }
 
-.animated-shadow:not(button):hover {
+.animated-shadow:not(.minimalistic):hover {
   /* height: 26.4rem;
   width: 19.8rem; */
   scale: 1.1;
@@ -57,8 +57,8 @@ body {
   animation: shadow-animation 5s linear infinite;
 }
 
-.animated-shadow:is(button):before,
-.animated-shadow:is(button):after {
+.animated-shadow:is(.minimalistic):before,
+.animated-shadow:is(.minimalistic):after {
   animation: shadow-animation 10s linear infinite;
 }
 
@@ -67,11 +67,11 @@ body {
   transition: all 0.2s ease-in-out;
 }
 
-.animated-shadow:is(button):after {
+.animated-shadow:is(.minimalistic):after {
   filter: blur(5px);
 }
 
-.animated-shadow:not(button):hover:after {
+.animated-shadow:not(.minimalistic):hover:after {
   filter: blur(20px);
 }
 
@@ -285,4 +285,12 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-color: #000;
+}
+
+.modal span:not(.project) {
+  @apply text-purple-400 font-bold cursor-pointer
+}
+
+.modal span:is(.project) {
+  @apply text-rose-400 font-bold cursor-pointer
 }

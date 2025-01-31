@@ -1,16 +1,21 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { isMobile } from "react-device-detect";
 import FontelloIcon from "./shared/FontelloIcon";
 import navigate from "../functions/Navigate";
 
 export default function Header() {
     const [isMenuVisible, setMenuVisible] = useState(false)
+    const [headerTitle, setHeaderTitle] = useState("Gabriel Reverso Pereira")
+
+    useEffect(() => {
+        setHeaderTitle(isMobile ? "Gabriel Reverso" : "Gabriel Reverso Pereira")
+    }, [isMobile])
 
     return (
         <>
             <header className="select-none fixed h-20 w-screen top-0 bg-[#0f0c29] shadow-lg shadow-[#0003] z-30">
                 <div className="flex flex-row items-center justify-between wrapper">
-                    <p className="text-xl font-bold">{isMobile ? "Gabriel Reverso" : "Gabriel Reverso Pereira"}</p>
+                    <p className="text-xl font-bold">{headerTitle}</p>
                     <nav id="nav-header" className="flex-row gap-6">
                         <p onClick={() => navigate("#home")} className={`hover:scale-105 transition-all text-lg font-bold hover:cursor-pointer`}>Home</p>
                         <p onClick={() => navigate("#about-me")} className="hover:scale-105 transition-all text-lg font-bold hover:cursor-pointer">Sobre mim</p>
