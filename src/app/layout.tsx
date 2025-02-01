@@ -26,8 +26,8 @@ export const metadata: Metadata = {
     siteName: "Portfólio",
     url: "https://gabrielreverso.github.io/portfolio",
     images: [{
-      url: "https://gabrielreverso.github.io/portfolio/public/WebsitePreview.jpg",
-      secureUrl: "https://gabrielreverso.github.io/portfolio/public/WebsitePreview.jpg",
+      url: "https://gabrielreverso.github.io/portfolio/WebsitePreview.jpg",
+      secureUrl: "https://gabrielreverso.github.io/portfolio/WebsitePreview.jpg",
       alt: "Portfolio Preview",
       type: "image/jpg"
     }]
