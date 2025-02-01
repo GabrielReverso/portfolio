@@ -55,7 +55,7 @@ export default function MainSection() {
                         </button>
                         <button onClick={() => {
                             console.log("Starting download...");
-                            download("Gabriel_Reverso_Pereira_-_Desenvolvimento_de_Software_e_Web.pdf")
+                            download("https://gabrielreverso.github.io/portfolio/Gabriel_Reverso_Pereira_-_Desenvolvimento_de_Software_e_Web.pdf")
                         }}
                             className="h-16 w-full md:w-44 rounded-xl text-xl font-bold bg-[#a33939] shadow-md shadow-[#0005] hover:bg-[#802626] transition-all"
                         >
