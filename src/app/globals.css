@@ -5,23 +5,14 @@
 html {
   scroll-behavior: smooth;
   scroll-padding: 5rem;
+  color-scheme: dark;
 }
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0a0a0a;
+  --foreground: #ededed;
   --gradient-shadow: linear-gradient(45deg,
       #99F6FF, #3D34AD, #6634ad, #9b34ad);
-}
-
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-    --gradient-shadow: linear-gradient(45deg,
-        #99F6FF, #3D34AD, #6634ad, #9b34ad);
-  }
 }
 
 body {
@@ -38,8 +29,6 @@ body {
 }
 
 .animated-shadow:not(.minimalistic):hover {
-  /* height: 26.4rem;
-  width: 19.8rem; */
   scale: 1.1;
 }
 

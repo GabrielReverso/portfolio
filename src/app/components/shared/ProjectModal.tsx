@@ -113,7 +113,7 @@ function CodapModal() {
 
 function PowerBeastModal() {
     const windowRef = useWindowResize()
-    const [dragonWidth, setDragonWidth] = useState(700)
+    const [dragonWidth, setDragonWidth] = useState<number | string>(700)
     const [align, setAlign] = useState("flex-row")
 
     useEffect(() => {
@@ -122,6 +122,9 @@ function PowerBeastModal() {
             setAlign("flex-col-reverse")
         } else if (windowRef.width <= 1300) {
             setDragonWidth(400)
+            setAlign("flex-col-reverse")
+        } else if (windowRef.width <= 768) {
+            setDragonWidth("95%")
             setAlign("flex-col-reverse")
         } else {
             setDragonWidth(700)
@@ -146,7 +149,7 @@ function PowerBeastModal() {
                         <li>Estado atual</li>
                     </ul>
                 </div>
-                <Image className={`self-center h-auto w-[95%] md:w-[${dragonWidth}px] rounded-xl shadow-lg shadow-black transition-all hover:scale-105`} src={require("../../assets/projects/powerbeast-1.webp")} alt="Imagem Power Beast" loading="lazy" aria-hidden unoptimized />
+                <Image id="dragon-image" className={`self-center h-auto rounded-xl shadow-lg shadow-black transition-all hover:scale-105`} src={require("../../assets/projects/powerbeast-1.webp")} alt="Imagem Power Beast" loading="lazy" aria-hidden unoptimized style={{ width: dragonWidth }} />
             </div>
             <p className="text-lg md:text-2xl">Em informações avançadas é possível ver outras informações como: capacidade atual, capacidade de projeto, capacidade total e voltagem, além de informações da CPU e da memória RAM.</p>
             <div className="flex flex-col md:flex-wrap md:flex-row items-center md:justify-center gap-10 mt-10">

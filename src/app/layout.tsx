@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import "./assets/fontello/css/fontello.css"
@@ -13,13 +13,18 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+export const viewport: Viewport = {
+  colorScheme: "dark",
+}
+
 export const metadata: Metadata = {
   title: "Gabriel Reverso - Portfólio",
   description: "Gabriel Reverso Pereira, desenvolvedor mobile, web e desktop. Descobra mais em meu portfólio!",
   keywords: "gabriel, gabriel reverso, gabriel reverso pereira, gabriel pereira, portfólio, desenvolvedor web, desenvolvedor mobile",
-  other: { "color-scheme": "dark only" },
+  /* other: { "color-scheme": "dark only" }, */
   authors: [{ name: "Gabriel Reverso Pereira", url: "https://www.linkedin.com/in/gabriel-reverso-pereira/" }],
   openGraph: {
+    locale: "pt-BR",
     type: "website",
     title: "Gabriel Reverso - Portfólio",
     description: "Gabriel Reverso Pereira, desenvolvedor mobile, web e desktop. Descobra mais em meu portfólio!",
