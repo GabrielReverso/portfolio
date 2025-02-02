@@ -1,36 +1,96 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Gabriel Reverso Pereira - Portfólio
 
-## Getting Started
+Este é o repositório do meu portfólio profissional, desenvolvido com Next.js e Tailwind CSS para apresentar meus projetos e experiências na área de desenvolvimento.
 
-First, run the development server:
+## 📌 Tecnologias Utilizadas
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+**Next.js** - Framework React para aplicações modernas e otimizadas.
+
+**Tailwind CSS** - Estilização rápida e responsiva.
+
+**AOS** - Animações suaves ao fazer scroll.
+
+**TypeScript** - Para maior segurança no desenvolvimento.
+
+## 🚀 Como Rodar o Projeto
+
+Clone este repositório:
+
+```ssh
+git clone https://github.com/GabrielReverso/portfolio.git
+cd portfolio
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Instale as dependências:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```ssh
+npm install --legacy-peer-deps
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Inicie o servidor de desenvolvimento:
 
-## Learn More
+```ssh
+npx next dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+Acesse http://localhost:3000 no navegador.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📂 Estrutura do Projeto
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+Portfolio/
+│
+├── .github/
+│   └── workflows/
+│       └── deploy.yml
+│
+├── public/
+│   └── assets
+│
+├── src/
+│   └── app/
+│       ├── assets/
+│       ├── components/
+│       ├── functions/
+│       ├── hooks/
+│       ├── styles/
+│       ├── global.css
+│       ├── layout.tsx
+│       └── page.tsx
+│  
+├── next.config.ts
+├── package-lock.json
+├── package.json
+├── postcss.config.mjs
+├── tailwind.config.ts
+└── tsconfig.json
+```
 
-## Deploy on Vercel
+## 📖 Funcionalidades
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Apresentação profissional e portfólio de projetos.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Seção de contato com links para redes sociais.
+
+Design responsivo e moderno.
+
+Animações com AOS.
+
+## 💡 Perguntas Frequentes
+
+**1. Posso usar este projeto como base para meu próprio portfólio?**
+
+Sim! Fique à vontade para clonar, modificar e personalizar como desejar, mas lembre-se de dar créditos e não utilizar as imagens do meu portfólio.
+
+## 📬 Contato
+
+Caso tenha alguma dúvida ou sugestão, entre em contato:
+
+- **Email**: [seu-email@email.com](mailto:reversogabrielpereira@gmail.com)
+- **LinkedIn**: [linkedin.com/in/seu-perfil](https://www.linkedin.com/in/gabriel-reverso-pereira)
+- **GitHub**: [github.com/seu-usuario](https://github.com/GabrielReverso)
+
+***
+
+Desenvolvido com 💙 por Gabriel Reverso Pereira
+
