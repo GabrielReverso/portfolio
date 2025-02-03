@@ -25,9 +25,9 @@ export default function Header() {
                         <p onClick={() => navigate("#contact")} className="hover:scale-105 transition-all text-lg font-bold hover:cursor-pointer">Contato</p>
                     </nav>
                     <div onClick={() => setMenuVisible(true)} id="header-menu-button" className="flex-col justify-center items-center aspect-square h-[60%] rounded-lg bg-[#251f57] shadow-sm shadow-black hover:bg-[#191442] transition-all">
-                        <span className="w-1/2 h-1 bg-[#f0f0f0] rounded-full"></span>
-                        <span className="w-1/2 h-1 bg-[#f0f0f0] rounded-full my-1.5"></span>
-                        <span className="w-1/2 h-1 bg-[#f0f0f0] rounded-full"></span>
+                        <span className="w-1/2 h-1 rounded-full bg-[#f0f0f0]"></span>
+                        <span className="w-1/2 h-1 rounded-full bg-[#f0f0f0] my-1.5"></span>
+                        <span className="w-1/2 h-1 rounded-full bg-[#f0f0f0]"></span>
                     </div>
                 </div>
             </header>
