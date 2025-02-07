@@ -39,6 +39,10 @@ export default function ProjectModal({ isVisible, onClose, type }: ModalProps) {
         }
     }
 
+    useEffect(() => {
+        document.body.style.overflowY = isVisible ? "hidden" : "auto"
+    }, [isVisible])
+
     return (
         <div className={`fixed z-50 top-0 left-0 bottom-0 right-0 h-screen w-screen bg-[#000b] ${isVisible ? "flex" : "hidden"} justify-center items-center backdrop-blur-sm`}>
             <div className="relative minimalistic animated-shadow w-[90%] h-[90%] md:w-[80%] md:h-[80%] rounded-2xl pt-16 pb-6 bg-[#0f0c29]">
