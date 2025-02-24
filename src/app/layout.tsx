@@ -20,7 +20,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: "Gabriel Reverso - Portfólio",
   description: "Gabriel Reverso Pereira, desenvolvedor mobile, web e desktop. Descobra mais em meu portfólio!",
-  keywords: "gabriel, gabriel reverso, gabriel reverso pereira, gabriel pereira, portfólio, desenvolvedor web, desenvolvedor mobile",
+  keywords: "gabriel, gabriel reverso, gabriel reverso pereira, gabriel pereira, portfólio, desenvolvedor web, desenvolvedor mobile, desenvolvedor react, desenvolvedor next, desenvolvedor react-native",
   other: { "google-site-verification": "PUbVH2ESpk-SLcAo0t1Uw-NO-OBWm442Qv7YGwfOsJQ" },
   authors: [{ name: "Gabriel Reverso Pereira", url: "https://www.linkedin.com/in/gabriel-reverso-pereira/" }],
   openGraph: {
