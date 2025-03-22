@@ -86,9 +86,9 @@ Sim! Fique à vontade para clonar, modificar e personalizar como desejar, mas le
 
 Caso tenha alguma dúvida ou sugestão, entre em contato:
 
-- **Email**: [seu-email@email.com](mailto:reversogabrielpereira@gmail.com)
-- **LinkedIn**: [linkedin.com/in/seu-perfil](https://www.linkedin.com/in/gabriel-reverso-pereira)
-- **GitHub**: [github.com/seu-usuario](https://github.com/GabrielReverso)
+- **Email**: [reversogabrielpereira@gmail.com](mailto:reversogabrielpereira@gmail.com)
+- **LinkedIn**: [linkedin.com/in/gabriel-reverso-pereira](https://www.linkedin.com/in/gabriel-reverso-pereira)
+- **GitHub**: [github.com/GabrielReverso](https://github.com/GabrielReverso)
 
 ***
 
