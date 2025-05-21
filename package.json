@@ -16,7 +16,7 @@
     "react-device-detect": "^2.2.3",
     "react-dom": "^19.0.0",
     "simplebar-react": "^3.3.0",
-    "typewriter-effect": "^2.21.0"
+    "typewriter-effect": "^2.22.0"
   },
   "devDependencies": {
     "@types/aos": "^3.0.7",

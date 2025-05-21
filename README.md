@@ -24,7 +24,7 @@ cd portfolio
 Instale as dependências:
 
 ```ssh
-npm install --legacy-peer-deps
+npm install
 ```
 
 Inicie o servidor de desenvolvimento:
