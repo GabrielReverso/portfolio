@@ -6,10 +6,11 @@ const nextConfig: NextConfig = {
 	images: {
 		unoptimized: true,
 	},
+	basePath: "/portfolio",
 };
 
-if (process.env.NODE_ENV !== "development") {
+/* if (process.env.NODE_ENV !== "development") {
 	nextConfig.basePath = "/portfolio";
-}
+} */
 
 export default nextConfig;
