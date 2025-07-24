@@ -1,12 +1,12 @@
 import Typewriter from "typewriter-effect";
-import FontelloIcon from "./shared/FontelloIcon";
-import ResponsiveIconScroll from "./shared/ResponsiveIconScroll";
+import FontelloIcon from "../components/shared/FontelloIcon";
+import ResponsiveIconScroll from "../components/scrollIcon/ResponsiveIconScroll";
 import Image from "next/image";
-import useMousePosition from "../hooks/UseMousePosition";
-import { useWindow } from "../hooks/UseWindow";
-import BackgroundShape from "./shared/BackgroundShape";
-import openNewTab from "../functions/NewTab";
-import download from "../functions/Download";
+import useMousePosition from "../utils/hooks/UseMousePosition";
+import { useWindow } from "../utils/hooks/UseWindow";
+import BackgroundShape from "../components/shared/BackgroundShape";
+import openNewTab from "../utils/functions/NewTab";
+import download from "../utils/functions/Download";
 
 export default function MainSection() {
 	let mouseDistanceX = 0;
@@ -202,15 +202,6 @@ export default function MainSection() {
 							}px)`,
 						}}
 					/>
-					{/*                     <img
-                        className='aspect-square h-[40rem]'
-                        src={require("../assets/gabriel.webp")}
-                        alt=""
-                        
-                        style={{
-                            transform: `translate(${mouseDistanceX * -30}px, ${mouseDistanceY * -30}px)`
-                        }}
-                    /> */}
 				</picture>
 			</div>
 		</main>

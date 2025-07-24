@@ -23,9 +23,8 @@ export const metadata: Metadata = {
 		"Gabriel Reverso Pereira, desenvolvedor mobile, web e desktop. Descobra mais em meu portfólio!",
 	keywords:
 		"gabriel, gabriel reverso, gabriel reverso pereira, gabriel pereira, portfólio, desenvolvedor web, desenvolvedor mobile, desenvolvedor react, desenvolvedor next, desenvolvedor react-native",
-	other: {
-		"google-site-verification":
-			"PUbVH2ESpk-SLcAo0t1Uw-NO-OBWm442Qv7YGwfOsJQ",
+	verification: {
+		google: "PUbVH2ESpk-SLcAo0t1Uw-NO-OBWm442Qv7YGwfOsJQ",
 	},
 	authors: [
 		{
