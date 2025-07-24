@@ -57,6 +57,8 @@ Portfolio/
 │       │
 │       ├── sections/
 │       │
+│       ├── stores/
+│       │
 │       ├── utils/
 │       │   ├── functions/
 │       │   └── hooks/
@@ -85,6 +87,9 @@ Abaixo estão descrições detalhadas das principais pastas dentro da estrutura 
 
     -   **`functions/`** (`./src/app/utils/functions/`):  
         Funções utilitárias reutilizáveis que auxiliam em cálculos, formatações e outras tarefas.
+
+-   **`stores/`** (`./src/app/utils/stores/`):  
+    Arquivos responsáveis pelo gerenciamento de estado global utilizando **Zustand**. Cada store centraliza dados e ações relacionadas à sua parte da aplicação.
 
 -   **`sections/`** (`./src/app/utils/sections/`):  
     Componentes principais da página, divididos por seção (ex: Sobre, Projetos, Contato). Cada arquivo representa uma área visível do site.
