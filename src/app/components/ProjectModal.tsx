@@ -1,5 +1,5 @@
 import { YouTubeEmbed } from "@next/third-parties/google";
-import FontelloIcon from "./FontelloIcon";
+import FontelloIcon from "./shared/FontelloIcon";
 import SimpleBar from "simplebar-react";
 
 import "simplebar-react/dist/simplebar.min.css";
@@ -142,7 +142,7 @@ function CodapModal() {
 				<div className={`flex ${align}`}>
 					<Image
 						className="self-center h-auto lg:h-[500px] w-48 lg:w-auto rounded-xl mr-0 mt-5 lg:mt-0 lg:mr-10 transition-all hover:scale-105"
-						src={require("../../assets/Cody.webp")}
+						src={require("../assets/Cody.webp")}
 						alt="Imagem codap"
 						loading="lazy"
 						aria-hidden
@@ -225,7 +225,7 @@ function CodapModal() {
 				<div className="flex flex-col md:flex-wrap md:flex-row items-center md:justify-center gap-10 my-10">
 					<Image
 						className="h-auto md:h-[500px] w-60 md:w-auto rounded-xl shadow-lg shadow-black transition-all hover:scale-105"
-						src={require("../../assets/projects/Codap-1.webp")}
+						src={require("../assets/projects/Codap-1.webp")}
 						alt="Imagem codap"
 						loading="lazy"
 						aria-hidden
@@ -233,7 +233,7 @@ function CodapModal() {
 					/>
 					<Image
 						className="h-auto md:h-[500px] w-60 md:w-auto rounded-xl shadow-lg shadow-black transition-all hover:scale-105"
-						src={require("../../assets/projects/Codap-2.webp")}
+						src={require("../assets/projects/Codap-2.webp")}
 						alt="Imagem codap"
 						loading="lazy"
 						aria-hidden
@@ -241,7 +241,7 @@ function CodapModal() {
 					/>
 					<Image
 						className="h-auto md:h-[500px] w-60 md:w-auto rounded-xl shadow-lg shadow-black transition-all hover:scale-105"
-						src={require("../../assets/projects/Codap-4.webp")}
+						src={require("../assets/projects/Codap-4.webp")}
 						alt="Imagem codap"
 						loading="lazy"
 						aria-hidden
@@ -249,7 +249,7 @@ function CodapModal() {
 					/>
 					<Image
 						className="h-auto md:h-[500px] w-60 md:w-auto rounded-xl shadow-lg shadow-black transition-all hover:scale-105"
-						src={require("../../assets/projects/Codap-5.webp")}
+						src={require("../assets/projects/Codap-5.webp")}
 						alt="Imagem codap"
 						loading="lazy"
 						aria-hidden
@@ -293,7 +293,7 @@ function PowerBeastModal() {
 			<div className={`flex ${align} pt-8 mb-15`}>
 				<Image
 					className={`self-center h-auto w-56 lg:w-[500px] rounded-xl my-10 lg:my-0 mr-0 lg:mr-10 transition-all hover:scale-105`}
-					src={require("../../assets/projects/powerbeast-icon.webp")}
+					src={require("../assets/projects/powerbeast-icon.webp")}
 					alt="Imagem Power Beast"
 					loading="lazy"
 					aria-hidden
@@ -361,7 +361,7 @@ function PowerBeastModal() {
 				<Image
 					id="dragon-image"
 					className={`self-center h-auto rounded-xl shadow-lg shadow-black transition-all hover:scale-105`}
-					src={require("../../assets/projects/powerbeast-1.webp")}
+					src={require("../assets/projects/powerbeast-1.webp")}
 					alt="Imagem Power Beast"
 					loading="lazy"
 					aria-hidden
@@ -377,7 +377,7 @@ function PowerBeastModal() {
 			<div className="flex flex-col md:flex-wrap md:flex-row items-center md:justify-center gap-10 mt-10">
 				<Image
 					className="h-auto w-[90%] md:w-[45%] rounded-xl shadow-lg shadow-black transition-all hover:scale-105"
-					src={require("../../assets/projects/powerbeast-2.webp")}
+					src={require("../assets/projects/powerbeast-2.webp")}
 					alt="Imagem Power Beast"
 					loading="lazy"
 					aria-hidden
@@ -385,7 +385,7 @@ function PowerBeastModal() {
 				/>
 				<Image
 					className="h-auto w-[90%] md:w-[45%] rounded-xl shadow-lg shadow-black transition-all hover:scale-105"
-					src={require("../../assets/projects/powerbeast-3.webp")}
+					src={require("../assets/projects/powerbeast-3.webp")}
 					alt="Imagem Power Beast"
 					loading="lazy"
 					aria-hidden
@@ -434,7 +434,7 @@ function JiraModal() {
 			<div className={`flex ${align} gap-10 pt-5 mb-15`}>
 				<Image
 					className="self-center h-auto w-[300px] lg:w-[400px] rounded-xl transition-all hover:scale-105"
-					src={require("../../assets/projects/jira-logo.webp")}
+					src={require("../assets/projects/jira-logo.webp")}
 					alt="Logo Jira"
 					loading="lazy"
 					aria-hidden
@@ -539,7 +539,7 @@ function CardapiumModal() {
 			<div className="flex flex-row flex-wrap justify-center gap-10 mt-10">
 				<Image
 					className="h-auto w-[550px] rounded-xl shadow-lg shadow-black transition-all hover:scale-105"
-					src={require("../../assets/projects/Cardapium-1.webp")}
+					src={require("../assets/projects/Cardapium-1.webp")}
 					alt="Imagem Cardapium"
 					loading="lazy"
 					aria-hidden
@@ -547,7 +547,7 @@ function CardapiumModal() {
 				/>
 				<Image
 					className="h-auto w-[550px] rounded-xl shadow-lg shadow-black transition-all hover:scale-105"
-					src={require("../../assets/projects/Cardapium-2.webp")}
+					src={require("../assets/projects/Cardapium-2.webp")}
 					alt="Imagem Cardapium"
 					loading="lazy"
 					aria-hidden
@@ -624,7 +624,7 @@ function EnciclopetModal() {
 			<div className="flex flex-row flex-wrap justify-center gap-10 mt-10">
 				<Image
 					className="h-[400px] w-auto rounded-xl shadow-lg shadow-black transition-all hover:scale-105"
-					src={require("../../assets/projects/Enciclopet-1.webp")}
+					src={require("../assets/projects/Enciclopet-1.webp")}
 					alt="Imagem Enciclopet"
 					loading="lazy"
 					aria-hidden
@@ -632,7 +632,7 @@ function EnciclopetModal() {
 				/>
 				<Image
 					className="h-[400px] w-auto rounded-xl shadow-lg shadow-black transition-all hover:scale-105"
-					src={require("../../assets/projects/Enciclopet-3.webp")}
+					src={require("../assets/projects/Enciclopet-3.webp")}
 					alt="Imagem Enciclopet"
 					loading="lazy"
 					aria-hidden
@@ -640,7 +640,7 @@ function EnciclopetModal() {
 				/>
 				<Image
 					className="h-[400px] w-auto rounded-xl shadow-lg shadow-black transition-all hover:scale-105"
-					src={require("../../assets/projects/Enciclopet-4.webp")}
+					src={require("../assets/projects/Enciclopet-4.webp")}
 					alt="Imagem Enciclopet"
 					loading="lazy"
 					aria-hidden
@@ -648,7 +648,7 @@ function EnciclopetModal() {
 				/>
 				<Image
 					className="h-[400px] w-auto rounded-xl shadow-lg shadow-black transition-all hover:scale-105"
-					src={require("../../assets/projects/Enciclopet-2.webp")}
+					src={require("../assets/projects/Enciclopet-2.webp")}
 					alt="Imagem Enciclopet"
 					loading="lazy"
 					aria-hidden

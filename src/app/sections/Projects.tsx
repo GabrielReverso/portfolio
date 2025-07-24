@@ -1,8 +1,8 @@
 import { useState } from "react";
 import openNewTab from "../utils/functions/NewTab";
-import ExpandableCard from "../components/shared/ExpandableCard";
+import ExpandableCard from "../components/ExpandableCard";
 import FontelloIcon from "../components/shared/FontelloIcon";
-import ProjectModal from "../components/shared/ProjectModal";
+import ProjectModal from "../components/ProjectModal";
 
 export default function Projects() {
 	const [isVisible, setVisible] = useState(false);
