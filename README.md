@@ -2,6 +2,8 @@
 
 Este é o repositório do meu portfólio profissional, desenvolvido com Next.js e Tailwind CSS para apresentar meus projetos e experiências na área de desenvolvimento.
 
+![Preview do Site](https://gabrielreverso.github.io/portfolio/WebsitePreview.jpg)
+
 ## 📌 Tecnologias Utilizadas
 
 **Next.js** - Framework React para aplicações modernas e otimizadas.
@@ -57,7 +59,7 @@ Portfolio/
 │       ├── global.css
 │       ├── layout.tsx
 │       └── page.tsx
-│  
+│
 ├── next.config.ts
 ├── package-lock.json
 ├── package.json
@@ -86,11 +88,10 @@ Sim! Fique à vontade para clonar, modificar e personalizar como desejar, mas le
 
 Caso tenha alguma dúvida ou sugestão, entre em contato:
 
-- **Email**: [reversogabrielpereira@gmail.com](mailto:reversogabrielpereira@gmail.com)
-- **LinkedIn**: [linkedin.com/in/gabriel-reverso-pereira](https://www.linkedin.com/in/gabriel-reverso-pereira)
-- **GitHub**: [github.com/GabrielReverso](https://github.com/GabrielReverso)
+-   **Email**: [reversogabrielpereira@gmail.com](mailto:reversogabrielpereira@gmail.com)
+-   **LinkedIn**: [linkedin.com/in/gabriel-reverso-pereira](https://www.linkedin.com/in/gabriel-reverso-pereira)
+-   **GitHub**: [github.com/GabrielReverso](https://github.com/GabrielReverso)
 
-***
+---
 
 Desenvolvido com 💙 por Gabriel Reverso Pereira
-

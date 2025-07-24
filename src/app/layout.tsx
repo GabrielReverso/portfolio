@@ -51,6 +51,15 @@ export const metadata: Metadata = {
 			},
 		],
 	},
+	twitter: {
+		card: "summary_large_image",
+		title: "Gabriel Reverso - Portfólio",
+		description:
+			"Gabriel Reverso Pereira, desenvolvedor mobile, web e desktop. Descobra mais em meu portfólio!",
+		images: [
+			"https://gabrielreverso.github.io/portfolio/WebsitePreview.jpg",
+		],
+	},
 };
 
 export default function RootLayout({
