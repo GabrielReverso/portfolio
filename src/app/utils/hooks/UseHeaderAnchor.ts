@@ -1,7 +1,7 @@
-import { useEffect } from "react";
+/* import { useEffect } from "react";
 import useHeaderAnchorStore from "@/app/stores/headerAnchorStore";
 import useIsVisible from "./UseIsVisible";
-
+ */
 /**
  * Hook personalizado que define a âncora ativa no cabeçalho
  * com base na visibilidade de um elemento na tela.
@@ -10,7 +10,7 @@ import useIsVisible from "./UseIsVisible";
  * @param options - Opções do IntersectionObserver (threshold, rootMargin, etc.)
  * @returns `elementRef` - Referência que deve ser atribuída ao elemento observado
  */
-export default function useHeaderAnchor(
+/* export default function useHeaderAnchor(
 	anchor: string,
 	options: IntersectionObserverInit = { threshold: 0.001 }
 ) {
@@ -30,3 +30,4 @@ export default function useHeaderAnchor(
 	// Retorna a referência que será usada no elemento DOM
 	return elementRef;
 }
+ */

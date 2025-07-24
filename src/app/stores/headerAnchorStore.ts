@@ -1,4 +1,4 @@
-import { create } from "zustand";
+/* import { create } from "zustand";
 
 // Define o formato do estado para controlar o link ativo no cabeçalho
 interface HeaderAnchorStore {
@@ -17,3 +17,4 @@ const useHeaderAnchorStore = create<HeaderAnchorStore>((set) => ({
 }));
 
 export default useHeaderAnchorStore; // Exporta o hook para uso nos componentes
+ */
