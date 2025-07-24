@@ -3,7 +3,7 @@ import openNewTab from "../utils/functions/NewTab";
 import openEmail from "../utils/functions/OpenEmail";
 import BackgroundShape from "../components/shared/BackgroundShape";
 import FontelloIcon from "../components/shared/FontelloIcon";
-import GoToStartShape from "../components/shared/GoToStartShape";
+import GoToStartShape from "../components/GoToStartShape";
 
 export default function Contact() {
 	return (

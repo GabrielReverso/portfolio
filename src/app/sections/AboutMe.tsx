@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import openNewTab from "../utils/functions/NewTab";
 import openEmail from "../utils/functions/OpenEmail";
 import BackgroundShape from "../components/shared/BackgroundShape";
