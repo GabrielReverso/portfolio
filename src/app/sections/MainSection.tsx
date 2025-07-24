@@ -7,6 +7,7 @@ import { useWindow } from "../utils/hooks/UseWindow";
 import BackgroundShape from "../components/shared/BackgroundShape";
 import openNewTab from "../utils/functions/NewTab";
 import download from "../utils/functions/Download";
+import Gabriel from "../assets/gabriel.webp";
 
 export default function MainSection() {
 	let mouseDistanceX = 0;
@@ -191,8 +192,8 @@ export default function MainSection() {
 						/* className='w-40 h-56' */
 						className="min-w-[400px] min-h-[400px] md:min-w-[928px] md:min-h-[928px] relative z-10"
 						aria-hidden
-						src={require("../assets/gabriel.webp")}
-						alt="Imagem de Gabriel"
+						src={Gabriel}
+						alt="Gabriel"
 						/* loading='lazy' */
 						unoptimized
 						priority
