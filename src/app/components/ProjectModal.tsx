@@ -1,4 +1,4 @@
-import { YouTubeEmbed } from "@next/third-parties/google";
+/* import { YouTubeEmbed } from "@next/third-parties/google";
 import FontelloIcon from "./shared/FontelloIcon";
 import SimpleBar from "simplebar-react";
 
@@ -661,3 +661,4 @@ function EnciclopetModal() {
 		</>
 	);
 }
+ */

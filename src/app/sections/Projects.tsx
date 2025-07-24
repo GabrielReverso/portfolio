@@ -2,7 +2,7 @@ import { useState } from "react";
 import openNewTab from "../utils/functions/NewTab";
 import ExpandableCard from "../components/ExpandableCard";
 import FontelloIcon from "../components/shared/FontelloIcon";
-import ProjectModal from "../components/ProjectModal";
+/* import ProjectModal from "../components/ProjectModal"; */
 
 export default function Projects() {
 	const [isVisible, setVisible] = useState(false);
@@ -10,11 +10,11 @@ export default function Projects() {
 
 	return (
 		<>
-			<ProjectModal
+			{/* <ProjectModal
 				isVisible={isVisible}
 				onClose={() => setVisible(false)}
 				type={modalType}
-			/>
+			/> */}
 			<div className="bg-slate-950 svg-background">
 				<section data-aos="fade" className="w-screen h-fit py-20">
 					<div
