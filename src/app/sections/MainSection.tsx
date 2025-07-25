@@ -1,10 +1,10 @@
 import Typewriter from "typewriter-effect";
-import FontelloIcon from "./shared/FontelloIcon";
-import ResponsiveIconScroll from "./shared/ResponsiveIconScroll";
+import FontelloIcon from "../components/shared/FontelloIcon";
+import ResponsiveIconScroll from "../components/shared/ResponsiveIconScroll";
 import Image from "next/image";
 import useMousePosition from "../hooks/UseMousePosition";
 import { useWindow } from "../hooks/UseWindow";
-import BackgroundShape from "./shared/BackgroundShape";
+import BackgroundShape from "../components/shared/BackgroundShape";
 import openNewTab from "../functions/NewTab";
 import download from "../functions/Download";
 

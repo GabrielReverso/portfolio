@@ -1,6 +1,6 @@
-import Carousel from "./carousel/Carousel";
-import Experience from "./shared/Experience";
-import FontelloIcon from "./shared/FontelloIcon";
+import Carousel from "../components/carousel/Carousel";
+import Experience from "../components/shared/Experience";
+import FontelloIcon from "../components/shared/FontelloIcon";
 
 export default function Curriculum() {
 	return (
