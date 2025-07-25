@@ -1,5 +1,5 @@
 import Carousel from "../components/carousel/Carousel";
-import Experience from "../components/shared/Experience";
+import Experience from "../components/Experience";
 import FontelloIcon from "../components/shared/FontelloIcon";
 
 export default function Curriculum() {

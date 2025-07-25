@@ -1,5 +1,5 @@
 import useMobile from "@/app/hooks/UseMobile";
-import "../../styles/scrollAnimation.css";
+import "./scrollAnimation.css";
 
 export default function ResponsiveIconScroll() {
 	const isMobile = useMobile();
