@@ -1,5 +1,5 @@
-import openNewTab from "../functions/NewTab";
-import openEmail from "../functions/OpenEmail";
+import openNewTab from "../utils/functions/NewTab";
+import openEmail from "../utils/functions/OpenEmail";
 import BackgroundShape from "../components/shared/BackgroundShape";
 import FontelloIcon from "../components/shared/FontelloIcon";
 

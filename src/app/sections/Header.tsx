@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { isMobile } from "react-device-detect";
 import FontelloIcon from "../components/shared/FontelloIcon";
-import navigate from "../functions/Navigate";
+import navigate from "../utils/functions/Navigate";
 
 export default function Header() {
 	const [isMenuVisible, setMenuVisible] = useState(false);

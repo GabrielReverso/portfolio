@@ -1,5 +1,5 @@
 import { useState } from "react";
-import openNewTab from "../functions/NewTab";
+import openNewTab from "../utils/functions/NewTab";
 import ExpandableCard from "../components/ExpandableCard";
 import FontelloIcon from "../components/shared/FontelloIcon";
 import ProjectModal from "../components/ProjectModal";

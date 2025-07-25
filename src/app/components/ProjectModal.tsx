@@ -4,8 +4,8 @@ import SimpleBar from "simplebar-react";
 
 import "simplebar-react/dist/simplebar.min.css";
 import Image from "next/image";
-import openNewTab from "@/app/functions/NewTab";
-import useWindowResize from "@/app/hooks/useWindowResize";
+import openNewTab from "@/app/utils/functions/NewTab";
+import useWindowResize from "@/app/utils/hooks/useWindowResize";
 import { useEffect, useState } from "react";
 
 interface ModalProps {

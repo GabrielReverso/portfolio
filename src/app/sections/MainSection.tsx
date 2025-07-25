@@ -2,11 +2,11 @@ import Typewriter from "typewriter-effect";
 import FontelloIcon from "../components/shared/FontelloIcon";
 import ResponsiveIconScroll from "../components/IconScroll/ResponsiveIconScroll";
 import Image from "next/image";
-import useMousePosition from "../hooks/UseMousePosition";
-import { useWindow } from "../hooks/UseWindow";
+import useMousePosition from "../utils/hooks/UseMousePosition";
+import { useWindow } from "../utils/hooks/UseWindow";
 import BackgroundShape from "../components/shared/BackgroundShape";
-import openNewTab from "../functions/NewTab";
-import download from "../functions/Download";
+import openNewTab from "../utils/functions/NewTab";
+import download from "../utils/functions/Download";
 
 export default function MainSection() {
 	let mouseDistanceX = 0;
