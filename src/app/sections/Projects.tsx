@@ -3,10 +3,13 @@ import openNewTab from "../utils/functions/NewTab";
 import ExpandableCard from "../components/ExpandableCard";
 import FontelloIcon from "../components/shared/FontelloIcon";
 import ProjectModal from "../components/ProjectModal";
+import useHeaderAnchor from "../utils/hooks/UseHeaderAnchor";
 
 export default function Projects() {
 	const [isVisible, setVisible] = useState(false);
 	const [modalType, setModalType] = useState("codap");
+
+	const projectRef = useHeaderAnchor("projects");
 
 	return (
 		<>
@@ -15,7 +18,7 @@ export default function Projects() {
 				onClose={() => setVisible(false)}
 				type={modalType}
 			/>
-			<div className="bg-slate-950 svg-background">
+			<div className="bg-slate-950 svg-background" ref={projectRef}>
 				<section data-aos="fade" className="w-screen h-fit py-20">
 					<div
 						id="projects"

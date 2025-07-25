@@ -2,11 +2,14 @@ import openNewTab from "../utils/functions/NewTab";
 import openEmail from "../utils/functions/OpenEmail";
 import BackgroundShape from "../components/shared/BackgroundShape";
 import FontelloIcon from "../components/shared/FontelloIcon";
+import useHeaderAnchor from "../utils/hooks/UseHeaderAnchor";
 
 export default function AboutMe() {
+	const aboutRef = useHeaderAnchor("about-me", { threshold: 0.01 });
 	return (
 		<div className="bg-slate-950">
 			<section
+				ref={aboutRef}
 				data-aos="fade-up"
 				id="about-me"
 				className="relative flex flex-row items-center justify-center w-screen"

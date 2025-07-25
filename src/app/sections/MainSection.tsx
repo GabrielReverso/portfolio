@@ -7,8 +7,11 @@ import { useWindow } from "../utils/hooks/UseWindow";
 import BackgroundShape from "../components/shared/BackgroundShape";
 import openNewTab from "../utils/functions/NewTab";
 import download from "../utils/functions/Download";
+import useHeaderAnchor from "../utils/hooks/UseHeaderAnchor";
 
 export default function MainSection() {
+	const homeRef = useHeaderAnchor("home");
+
 	let mouseDistanceX = 0;
 	let mouseDistanceY = 0;
 
@@ -27,7 +30,11 @@ export default function MainSection() {
 			style={{ overflowX: "hidden" }}
 		>
 			<div className="flex flex-row wrapper">
-				<aside id="main-section" className="pt-10 md:pt-40">
+				<aside
+					id="main-section"
+					className="pt-10 md:pt-40"
+					ref={homeRef}
+				>
 					<p className="text-2xl md:text-3xl">Olá, eu sou o </p>
 					<p className="font-bold text-6xl md:text-7xl mt-4 text-cyan-400">
 						Gabriel

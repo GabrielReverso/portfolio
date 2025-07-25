@@ -4,11 +4,14 @@ import openEmail from "../utils/functions/OpenEmail";
 import BackgroundShape from "../components/shared/BackgroundShape";
 import FontelloIcon from "../components/shared/FontelloIcon";
 import GoToStartShape from "../components/GoToStartShape";
+import useHeaderAnchor from "../utils/hooks/UseHeaderAnchor";
 
 export default function Contact() {
+	const contactRef = useHeaderAnchor("contact");
 	return (
 		<div id="contact" className="bg-slate-950">
 			<section
+				ref={contactRef}
 				id="contact-section"
 				data-aos="fade"
 				className="relative w-screen pt-3 md:pt-32 pb-32"

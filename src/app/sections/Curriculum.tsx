@@ -1,11 +1,17 @@
 import Carousel from "../components/carousel/Carousel";
 import Experience from "../components/Experience";
 import FontelloIcon from "../components/shared/FontelloIcon";
+import useHeaderAnchor from "../utils/hooks/UseHeaderAnchor";
 
 export default function Curriculum() {
+	const curriculumRef = useHeaderAnchor("curriculum");
 	return (
 		<div id="curriculum" className="bg-slate-950">
-			<section data-aos="fade-up" className="w-screen h-fit pt-20">
+			<section
+				ref={curriculumRef}
+				data-aos="fade-up"
+				className="w-screen h-fit pt-20"
+			>
 				<div className="wrapper flex flex-col pt-10">
 					<p className="text-2xl lg:text-3xl mb-2 font-bold">
 						Saiba mais

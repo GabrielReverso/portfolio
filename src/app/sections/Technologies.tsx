@@ -1,9 +1,16 @@
 import LogoLink from "../components/shared/LogoLink";
+import useHeaderAnchor from "../utils/hooks/UseHeaderAnchor";
 
 export default function Technologies() {
+	const technologiesRef = useHeaderAnchor("technologies");
+
 	return (
 		<div id="technologies" className="bg-slate-950">
-			<section data-aos="fade-up" className="w-screen py-20">
+			<section
+				ref={technologiesRef}
+				data-aos="fade-up"
+				className="w-screen py-20"
+			>
 				<div className="flex flex-col items-center justify-center wrapper w-screen h-fit px-5">
 					<h1 className="text-center text-5xl md:text-6xl mb-10 font-bold text-violet-500">
 						Tecnologias
