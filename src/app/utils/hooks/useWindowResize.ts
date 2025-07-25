@@ -1,24 +1,35 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 
+/**
+ * Hook que retorna as dimensões da janela (viewport) e as atualiza em tempo real
+ * sempre que a janela for redimensionada.
+ *
+ * @returns Objeto com `width` e `height` da janela
+ */
 export default function useWindowResize() {
-    const [windowSize, setWindowSize] = useState({
-        width: 0,
-        height: 0,
-    });
+	const [windowSize, setWindowSize] = useState({
+		width: 1024, // Valor inicial padrão
+		height: 768,
+	});
 
-    useEffect(() => {
-        function handleResize() {
-            setWindowSize({
-                width: window.innerWidth,
-                height: window.innerHeight,
-            });
-        }
+	useEffect(() => {
+		// Função chamada ao redimensionar a janela
+		function handleResize() {
+			setWindowSize({
+				width: window.innerWidth,
+				height: window.innerHeight,
+			});
+		}
 
-        window.addEventListener('resize', handleResize);
-        handleResize(); // Call it initially
+		// Adiciona o listener de resize
+		window.addEventListener("resize", handleResize);
 
-        return () => window.removeEventListener('resize', handleResize);
-    }, []);
+		// Chamada inicial para garantir valores corretos
+		handleResize();
 
-    return windowSize;
+		// Remove o listener ao desmontar
+		return () => window.removeEventListener("resize", handleResize);
+	}, []);
+
+	return windowSize;
 }
